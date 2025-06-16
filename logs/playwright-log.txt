@@ -1,0 +1,195 @@
+{"level":30,"time":"2025-06-16T23:39:03.158Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Listening on 127.0.0.1:52351"}
+(node:27272) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-16T23:39:03.570Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-16T23:39:04.633Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Adding browser to stack: firefox, version: 137.0"}
+{"level":30,"time":"2025-06-16T23:39:04.633Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-16T23:39:04.633Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-16T23:39:04.640Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-16T23:39:04.641Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-16T23:39:04.690Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active context"}
+{"level":30,"time":"2025-06-16T23:39:06.289Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-16T23:39:06.289Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active page"}
+{"level":30,"time":"2025-06-16T23:39:10.398Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-16T23:39:10.405Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:10.406Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"email\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:10.500Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:10.505Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:10.505Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"senha\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:10.534Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:10.539Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:10.540Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"entrar\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:10.601Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element [data-testid=\"entrar\"] containing Entrar"}
+{"level":30,"time":"2025-06-16T23:39:10.601Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:10.606Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-16T23:39:10.606Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"entrar\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:10.730Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method click"}
+{"level":30,"time":"2025-06-16T23:39:10.736Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:10.737Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with p.lead in page."}
+{"level":30,"time":"2025-06-16T23:39:11.611Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:11.617Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.617Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with p.lead in page."}
+{"level":30,"time":"2025-06-16T23:39:11.638Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element p.lead containing Este é seu sistema para administrar seu ecommerce."}
+{"level":30,"time":"2025-06-16T23:39:11.639Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.647Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.647Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.669Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element [data-testid=\"cadastrarProdutos\"] containing Cadastrar"}
+{"level":30,"time":"2025-06-16T23:39:11.669Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.674Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-16T23:39:11.674Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.798Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method click"}
+{"level":30,"time":"2025-06-16T23:39:11.803Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:11.803Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2025-06-16T23:39:11.810Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:11.814Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.815Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2025-06-16T23:39:11.835Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element h1 containing Cadastro de Produtos"}
+{"level":30,"time":"2025-06-16T23:39:11.835Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.842Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.842Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"nome\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.861Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.866Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.866Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"preco\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.893Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.898Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.898Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"descricao\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.920Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.924Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.924Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"quantity\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.945Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:11.950Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.950Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:11.970Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element [data-testid=\"cadastarProdutos\"] containing Cadastrar"}
+{"level":30,"time":"2025-06-16T23:39:11.970Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:11.974Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-16T23:39:11.974Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:12.088Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method click"}
+{"level":30,"time":"2025-06-16T23:39:12.093Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:12.093Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped in page."}
+{"level":30,"time":"2025-06-16T23:39:12.444Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:12.451Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.454Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.457Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.459Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.462Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.464Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.468Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.470Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.473Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active context"}
+{"level":30,"time":"2025-06-16T23:39:12.474Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changing current active page: page=f1af576e-ce77-4e9d-be72-4c9b9d46b9cc"}
+{"level":30,"time":"2025-06-16T23:39:12.474Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active page"}
+{"level":30,"time":"2025-06-16T23:39:12.476Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-16T23:39:12.488Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Removed page=c3569e31-3776-4ab4-bc8f-542874701bd0 from context=3d6a48d2-6b47-479d-b668-0c27f3d70b8c page stack"}
+{"level":30,"time":"2025-06-16T23:39:12.505Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-16T23:39:12.509Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.510Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:12.516Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-06-16T23:39:12.516Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-06-16T23:39:12.522Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-16T23:39:12.522Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-16T23:39:12.556Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active context"}
+{"level":30,"time":"2025-06-16T23:39:12.917Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-16T23:39:12.917Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active page"}
+{"level":30,"time":"2025-06-16T23:39:14.733Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-16T23:39:14.738Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:14.738Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"email\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:14.793Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:14.797Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:14.797Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"senha\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:14.820Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:14.824Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:14.824Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"entrar\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:14.871Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element [data-testid=\"entrar\"] containing Entrar"}
+{"level":30,"time":"2025-06-16T23:39:14.871Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:14.875Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-16T23:39:14.875Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"entrar\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:15.012Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method click"}
+{"level":30,"time":"2025-06-16T23:39:15.017Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:15.017Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with p.lead in page."}
+{"level":30,"time":"2025-06-16T23:39:15.876Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:15.881Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:15.881Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with p.lead in page."}
+{"level":30,"time":"2025-06-16T23:39:15.900Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element p.lead containing Este é seu sistema para administrar seu ecommerce."}
+{"level":30,"time":"2025-06-16T23:39:15.900Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:15.906Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:15.906Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:15.923Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element [data-testid=\"cadastrarProdutos\"] containing Cadastrar"}
+{"level":30,"time":"2025-06-16T23:39:15.923Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:15.927Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-16T23:39:15.927Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.029Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method click"}
+{"level":30,"time":"2025-06-16T23:39:16.034Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:16.034Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2025-06-16T23:39:16.039Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:16.043Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:16.043Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2025-06-16T23:39:16.059Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element h1 containing Cadastro de Produtos"}
+{"level":30,"time":"2025-06-16T23:39:16.059Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:16.065Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.066Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"nome\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.082Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.086Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.086Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"preco\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.107Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.112Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.112Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"descricao\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.134Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.138Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.138Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"quantity\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.155Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-16T23:39:16.159Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:16.160Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.178Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element [data-testid=\"cadastarProdutos\"] containing Cadastrar"}
+{"level":30,"time":"2025-06-16T23:39:16.178Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:16.182Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-16T23:39:16.182Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastarProdutos\"] in page."}
+{"level":30,"time":"2025-06-16T23:39:16.288Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method click"}
+{"level":30,"time":"2025-06-16T23:39:16.292Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:16.292Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped in page."}
+{"level":30,"time":"2025-06-16T23:39:16.640Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-16T23:39:16.646Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getElements"}
+{"level":30,"time":"2025-06-16T23:39:16.646Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is disabled, return Locator: css=.table.table-striped tbody tr in page."}
+{"level":30,"time":"2025-06-16T23:39:16.646Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2025-06-16T23:39:17.507Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Found 5 elements."}
+{"level":30,"time":"2025-06-16T23:39:17.507Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getElements"}
+{"level":30,"time":"2025-06-16T23:39:17.512Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.513Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped tbody tr >> nth=0 in page."}
+{"level":30,"time":"2025-06-16T23:39:17.530Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element css=.table.table-striped tbody tr >> nth=0 containing Eric Perez\t777\tDescrição do Produto - PEDRO\t7\t\t\nEditar\nExcluir"}
+{"level":30,"time":"2025-06-16T23:39:17.530Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.541Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.541Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped tbody tr >> nth=1 in page."}
+{"level":30,"time":"2025-06-16T23:39:17.559Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element css=.table.table-striped tbody tr >> nth=1 containing Logitech MX Vertical\t470\tMouse\t382\t\t\nEditar\nExcluir"}
+{"level":30,"time":"2025-06-16T23:39:17.559Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.564Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.564Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped tbody tr >> nth=2 in page."}
+{"level":30,"time":"2025-06-16T23:39:17.580Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element css=.table.table-striped tbody tr >> nth=2 containing Samsung 60 polegadas\t5240\tTV\t49977\t\t\nEditar\nExcluir"}
+{"level":30,"time":"2025-06-16T23:39:17.580Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.586Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.586Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped tbody tr >> nth=3 in page."}
+{"level":30,"time":"2025-06-16T23:39:17.602Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element css=.table.table-striped tbody tr >> nth=3 containing Janet Cox\t777\tDescrição do Produto - PEDRO\t7\t\t\nEditar\nExcluir"}
+{"level":30,"time":"2025-06-16T23:39:17.602Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.608Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.608Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Strict mode is enabled, find Locator with css=.table.table-striped tbody tr >> nth=4 in page."}
+{"level":30,"time":"2025-06-16T23:39:17.641Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Retrieved text for element css=.table.table-striped tbody tr >> nth=4 containing Austin Jordan\t777\tDescrição do Produto - PEDRO\t7\t\t\nEditar\nExcluir"}
+{"level":30,"time":"2025-06-16T23:39:17.641Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-16T23:39:17.650Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-16T23:39:17.650Z","pid":27272,"hostname":"PEDRO-PC-2024","Take screenshot with options: ":{"path":"C:\\Users\\Pedro\\Documents\\Compass UOL\\Outros Repositórios\\serverest-robotframework-tests\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-16T23:39:17.705Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-16T23:39:17.711Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.714Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.717Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.719Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.721Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.723Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.727Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.729Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.731Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active context"}
+{"level":30,"time":"2025-06-16T23:39:17.731Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changing current active page: page=3dcdd7a9-09a4-4121-9f02-76b5573a0114"}
+{"level":30,"time":"2025-06-16T23:39:17.731Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Changed active page"}
+{"level":30,"time":"2025-06-16T23:39:17.734Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-06-16T23:39:17.741Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Removed page=c0442aca-1ca9-4eb9-92db-d8baab3742a4 from context=dfe6dc63-7864-4428-99ad-4b3f2f9e80dc page stack"}
+{"level":30,"time":"2025-06-16T23:39:17.754Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-06-16T23:39:17.762Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.762Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-16T23:39:17.820Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-16T23:39:20.906Z","pid":27272,"hostname":"PEDRO-PC-2024","msg":"End of node method closeAllBrowsers"}
