@@ -1,0 +1,18 @@
+{
+    "usuario": {
+        "nome": "Joana",
+        "email": "joana@gmail.com",
+        "password": "123456",
+        "administrador": "true"
+    },
+    "usuario-login": {
+        "email": "joana@gmail.com",
+        "password": "123456"
+    },
+    "produto": {
+        "nome": "Mouse",
+        "preço": "12",
+        "descricao": "Um mouse novo",
+        "quantidade": "4"
+    }
+}
