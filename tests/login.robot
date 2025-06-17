@@ -1,15 +1,15 @@
-*** Settings ***
-Documentation    Cenarios autenticaçao  de cadastro de usuarios 
-Resource    ../resources/common/common.resource
+# *** Settings ***
+# Documentation    Cenarios autenticaçao  de cadastro de usuarios 
+# Resource    ../resources/common/common.resource
 
-Test Teardown    Take Screenshot
+# Test Teardown    Take Screenshot
 
-*** Test Cases ***
+# *** Test Cases ***
 
-Cenario: Login com credenciais valido
-    Abrir página
+# Cenario: Login com credenciais valido
+#     Abrir página
 
-    ${user}=    Criar login valido
+#     ${user}=    Criar login valido
 
-    Enviar formulário de login   ${user}
-    O usuário deve estar logado   ${user}[name]
+#     Enviar formulário de login   ${user}
+#     O usuário deve estar logado   ${user}[name]

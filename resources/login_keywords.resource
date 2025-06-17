@@ -25,8 +25,7 @@ Criar login valido
     Click        css=button >> text=Entrar
 
 
- O usuário deve estar logado
-
+O usuário deve estar logado
     [Arguments]    ${name} 
 
     @{nome_inicial}    Split String    ${name}
@@ -35,6 +34,4 @@ Criar login valido
     Wait For Elements State    ${element}   
     ...    visible     5
     
-    Get Text    ${element}    equal    Bem Vindo ${nome_inicial}[0] 
-
-  
+    Get Text    ${element}    equal    Bem Vindo ${nome_inicial}[0]
