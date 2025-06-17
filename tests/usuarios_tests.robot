@@ -9,23 +9,9 @@ Test Teardown    Take Screenshot
 Cenario: Criar um novo usuário com administrador valido
     
     ${user}=    Criar usuario como administrador
-    
+
     Ir para a página de inscrição
 
     Excluir usuário - API    ${user['email']}
 
     Enviar formulário de inscrição    ${user}
-
-
-   
-
-
-
-    
-    
-
-    
-
-    
-
-

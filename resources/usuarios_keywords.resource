@@ -5,7 +5,6 @@ Resource    ./common/common.resource
 
 *** Keywords ***
 
-
 Criar usuario como administrador 
 
     ${user}        Create Dictionary
@@ -14,6 +13,7 @@ Criar usuario como administrador
     ...    password=senha123
     ...    administrador=true
     RETURN    ${user}
+
 
 Ir para a página de inscrição
 
@@ -37,4 +37,3 @@ Enviar formulário de inscrição
     Click    css=button[type=submit] >> text=Cadastrar 
 
     Sleep    5
-
