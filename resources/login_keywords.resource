@@ -1,20 +1,40 @@
 *** Settings ***
-Library     Collections
+Documentation    Keywords para testes  das pagina de login
 Library     Browser
+Resource    ./common/common.resource        
 
 *** Keywords ***
-Realizar login com credenciais de administrador valido
-    # Abrir Navegador
-    New Browser    browser=firefox    headless=false
-    New Page       https://compassuolfront.serverest.dev/
 
-    # Login
-    Fill Text    [data-testid="email"]     fulano@qa.com
-    Fill Text    [data-testid="senha"]     teste
-    Get Text     [data-testid="entrar"]    ==    Entrar
-    Click        [data-testid="entrar"]
+
+Criar login valido 
+   ${user}    Create Dictionary
+    ...    name=teste
+    ...    email=teste@teste.com
+    ...    password=senha123 
+    RETURN    ${user}
     
-    # Aguarda e valida mensagem de boas-vindas
-    Wait For Elements State    p.lead         visible    5s
-    ${mensagem}=               Get Text       p.lead
-    Should Be Equal            ${mensagem}    Este é seu sistema para administrar seu ecommerce.
+
+ Enviar formulário de login
+
+    [Arguments]    ${user}    
+
+    Fill Text    css=input[placeholder$="Digite seu email"]     ${user}[email]
+    Fill Text    css=input[placeholder="Digite sua senha"]    ${user}[password]
+
+    #Click        xpath=//button[text()="Entrar"]
+    Click        css=button >> text=Entrar
+
+
+ O usuário deve estar logado
+
+    [Arguments]    ${name} 
+
+    @{nome_inicial}    Split String    ${name}
+    ${element}    Set Variable    css=h1  
+
+    Wait For Elements State    ${element}   
+    ...    visible     5
+    
+    Get Text    ${element}    equal    Bem Vindo ${nome_inicial}[0] 
+
+  
