@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-17T14:43:41.829911" rpa="false" schemaversion="5">
+<suite id="s1" name="Alterar Usuario Test" source="C:\Users\breme\OneDrive\Área de Trabalho\testsWebServerest-Squad\serverest-robotframework-tests\resources\alterar_usuario_test.robot">
+<test id="s1-t1" name="Cenário de teste 03 - Validar o campo de alteração/edição de um usuário válido" line="16">
+<kw name="Acessar o site serverest" owner="alterar_usuario_keyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-17T14:43:42.134899" level="INFO">Opening browser 'Chrome' to base url 'https://compassuolfront.serverest.dev'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-17T14:43:42.134651" elapsed="3.416779"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-17T14:43:45.551671" elapsed="0.120843"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h1[text()="Login"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-17T14:43:45.672746" elapsed="0.014698"/>
+</kw>
+<status status="PASS" start="2025-06-17T14:43:42.134093" elapsed="3.553480"/>
+</kw>
+<kw name="Logar com usuário administrador válido" owner="alterar_usuario_keyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-17T14:43:45.688777" level="INFO">Typing text 'qabre@admin.com' into text field 'css=input[data-testid="email"]'.</msg>
+<arg>css=input[data-testid="email"]</arg>
+<arg>${EMAIL_ADMIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T14:43:45.688524" elapsed="0.174577"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-17T14:43:45.863539" level="INFO">Typing text 'admin123' into text field 'css=input[data-testid="senha"]'.</msg>
+<arg>css=input[data-testid="senha"]</arg>
+<arg>${SENHA_ADMIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T14:43:45.863299" elapsed="0.085033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-17T14:43:45.948697" level="INFO">Clicking button 'css=button[data-testid="entrar"]'.</msg>
+<arg>css=button[data-testid="entrar"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T14:43:45.948514" elapsed="0.079231"/>
+</kw>
+<status status="PASS" start="2025-06-17T14:43:45.688080" elapsed="0.339827"/>
+</kw>
+<kw name="Acessar página de usuários" owner="alterar_usuario_keyword">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=[data-testid="listar-usuarios"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-17T14:43:46.028650" elapsed="1.136757"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-17T14:43:47.166148" level="INFO">Clicking element 'css=[data-testid="listar-usuarios"]'.</msg>
+<arg>css=[data-testid="listar-usuarios"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T14:43:47.165769" elapsed="0.058664"/>
+</kw>
+<status status="PASS" start="2025-06-17T14:43:46.028337" elapsed="1.196326"/>
+</kw>
+<kw name="Clicar no botão editar do primeiro usuário" owner="alterar_usuario_keyword">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=(//tbody//button[contains(text(), "Editar")])[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-17T14:43:47.226924" elapsed="0.461782"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-17T14:43:47.689651" level="INFO">Clicking element 'xpath=(//tbody//button[contains(text(), "Editar")])[1]'.</msg>
+<arg>xpath=(//tbody//button[contains(text(), "Editar")])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T14:43:47.689166" elapsed="0.062982"/>
+</kw>
+<status status="PASS" start="2025-06-17T14:43:47.226552" elapsed="0.525757"/>
+</kw>
+<kw name="Verificar o campo de preenchimento dos novos dados do usuário">
+<msg time="2025-06-17T14:43:47.755260" level="FAIL">No keyword with name 'Verificar o campo de preenchimento dos novos dados do usuário' found.</msg>
+<status status="FAIL" start="2025-06-17T14:43:47.754866" elapsed="0.000586">No keyword with name 'Verificar o campo de preenchimento dos novos dados do usuário' found.</status>
+</kw>
+<status status="FAIL" start="2025-06-17T14:43:42.133288" elapsed="5.622708">No keyword with name 'Verificar o campo de preenchimento dos novos dados do usuário' found.</status>
+</test>
+<status status="FAIL" start="2025-06-17T14:43:41.831991" elapsed="5.925158"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Alterar Usuario Test" id="s1" pass="0" fail="1" skip="0">Alterar Usuario Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-06-17T14:43:42.131265" level="ERROR">Error in file 'C:\Users\breme\OneDrive\Área de Trabalho\testsWebServerest-Squad\serverest-robotframework-tests\tests\alterar_usuario_keyword.robot' on line 2: Error in file 'C:\Users\breme\OneDrive\Área de Trabalho\testsWebServerest-Squad\serverest-robotframework-tests\resources\alterar_usuario_test.robot' on line 15: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
