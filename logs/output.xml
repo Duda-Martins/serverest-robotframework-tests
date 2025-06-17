@@ -1,106 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-17T11:03:24.286097" rpa="false" schemaversion="5">
-<suite id="s1" name="Login Tests" source="c:\serverest-robotframework-tests\tests\login_tests.robot">
-<test id="s1-t1" name="Cenario: Login com credenciais valido" line="10">
+<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-17T11:37:35.536229" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\serverest-robotframework-tests\tests">
+<suite id="s1-s1" name="Login Tests" source="C:\serverest-robotframework-tests\tests\login_tests.robot">
+<test id="s1-s1-t1" name="Cenario: Login com credenciais valido" line="10">
 <kw name="Criar Sessao" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-06-17T11:03:25.044256" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\1a13bcd1-595a-42c3-a3b4-c1958d31c756"}</msg>
-<msg time="2025-06-17T11:03:25.080858" level="INFO">Starting Browser process C:\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:62735</msg>
-<msg time="2025-06-17T11:03:26.459701" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\1a13bcd1-595a-42c3-a3b4-c1958d31c756"}</msg>
+<msg time="2025-06-17T11:37:36.349333" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\02cd243b-6a62-4388-b8e0-4de844aa94bb"}</msg>
+<msg time="2025-06-17T11:37:36.386124" level="INFO">Starting Browser process C:\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64175</msg>
+<msg time="2025-06-17T11:37:37.925634" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\02cd243b-6a62-4388-b8e0-4de844aa94bb"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-06-17T11:03:25.043570" elapsed="1.416292"/>
+<status status="PASS" start="2025-06-17T11:37:36.348645" elapsed="1.577172"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-06-17T11:03:28.848390" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev</msg>
-<msg time="2025-06-17T11:03:28.848463" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-06-17T11:37:40.294383" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev</msg>
+<msg time="2025-06-17T11:37:40.294460" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-06-17T11:03:26.460092" elapsed="2.388519"/>
+<status status="PASS" start="2025-06-17T11:37:37.926085" elapsed="2.368516"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-06-17T11:03:28.849258" level="INFO">Creating Session using : alias=restful-serverest, url=https://compassuol.serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-06-17T11:37:40.295247" level="INFO">Creating Session using : alias=restful-serverest, url=https://compassuol.serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=restful-serverest</arg>
 <arg>url=${API_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-06-17T11:03:28.848812" elapsed="0.000795"/>
+<status status="PASS" start="2025-06-17T11:37:40.294896" elapsed="0.000578"/>
 </kw>
-<status status="PASS" start="2025-06-17T11:03:25.042782" elapsed="3.806968"/>
+<status status="PASS" start="2025-06-17T11:37:36.347869" elapsed="3.947714"/>
 </kw>
+<kw name="Criar login valido" owner="login_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-06-17T11:03:28.851007" level="INFO">${user} = {'name': 'teste', 'email': 'teste@teste.com', 'password': 'senha123'}</msg>
+<msg time="2025-06-17T11:37:40.296746" level="INFO">${user} = {'name': 'teste', 'email': 'teste@teste.com', 'password': 'senha123'}</msg>
 <var>${user}</var>
 <arg>name=teste</arg>
 <arg>email=teste@teste.com</arg>
 <arg>password=senha123</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-06-17T11:03:28.850155" elapsed="0.000914"/>
+<status status="PASS" start="2025-06-17T11:37:40.296362" elapsed="0.000421"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-17T11:37:40.296869" elapsed="0.000124"/>
+</return>
+<msg time="2025-06-17T11:37:40.297167" level="INFO">${user} = {'name': 'teste', 'email': 'teste@teste.com', 'password': 'senha123'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-06-17T11:37:40.295925" elapsed="0.001272"/>
 </kw>
 <kw name=" Enviar formulário de login" owner="login_keywords">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-17T11:03:28.853088" level="INFO">Fills the text 'teste@teste.com' in the given field.</msg>
+<msg time="2025-06-17T11:37:40.298369" level="INFO">Fills the text 'teste@teste.com' in the given field.</msg>
 <arg>css=input[placeholder$="Digite seu email"]</arg>
 <arg>${user}[email]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-17T11:03:28.852484" elapsed="0.141922"/>
+<status status="PASS" start="2025-06-17T11:37:40.297873" elapsed="0.149981"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-17T11:03:28.995680" level="INFO">Fills the text 'senha123' in the given field.</msg>
+<msg time="2025-06-17T11:37:40.450895" level="INFO">Fills the text 'senha123' in the given field.</msg>
 <arg>css=input[placeholder="Digite sua senha"]</arg>
 <arg>${user}[password]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-17T11:03:28.994868" elapsed="0.017559"/>
+<status status="PASS" start="2025-06-17T11:37:40.448082" elapsed="0.017700"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-06-17T11:03:29.013089" level="INFO">Clicks the element 'css=button &gt;&gt; text=Entrar'.</msg>
+<msg time="2025-06-17T11:37:40.466447" level="INFO">Clicks the element 'css=button &gt;&gt; text=Entrar'.</msg>
 <arg>css=button &gt;&gt; text=Entrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-17T11:03:29.012620" elapsed="0.054626"/>
+<status status="PASS" start="2025-06-17T11:37:40.465978" elapsed="0.040055"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2025-06-17T11:03:28.851823" elapsed="0.215562"/>
+<status status="PASS" start="2025-06-17T11:37:40.297499" elapsed="0.208657"/>
 </kw>
 <kw name=" O usuário deve estar logado" owner="login_keywords">
 <kw name="Split String" owner="String">
-<msg time="2025-06-17T11:03:29.072741" level="INFO">@{nome_inicial} = [ teste ]</msg>
+<msg time="2025-06-17T11:37:40.507885" level="INFO">@{nome_inicial} = [ teste ]</msg>
 <var>@{nome_inicial}</var>
 <arg>${name}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2025-06-17T11:03:29.072451" elapsed="0.000324"/>
+<status status="PASS" start="2025-06-17T11:37:40.507125" elapsed="0.000805"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-06-17T11:03:29.073124" level="INFO">${element} = css=h1</msg>
+<msg time="2025-06-17T11:37:40.509099" level="INFO">${element} = css=h1</msg>
 <var>${element}</var>
 <arg>css=h1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-06-17T11:03:29.072909" elapsed="0.000244"/>
+<status status="PASS" start="2025-06-17T11:37:40.508605" elapsed="0.000548"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-06-17T11:03:29.080133" level="INFO">Waited for Element with selector css=h1 at state visible</msg>
+<msg time="2025-06-17T11:37:40.516917" level="INFO">Waited for Element with selector css=h1 at state visible</msg>
 <arg>${element}</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-06-17T11:03:29.073277" elapsed="0.007014"/>
+<status status="PASS" start="2025-06-17T11:37:40.509438" elapsed="0.007634"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-06-17T11:03:30.113139" level="INFO">Text: 'Login'</msg>
-<msg time="2025-06-17T11:03:30.314940" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2025-06-17T11:03:30.315058" level="INFO">See also file:///C:/serverest-robotframework-tests/logs/playwright-log.txt for additional details.</msg>
-<msg time="2025-06-17T11:03:30.315398" level="FAIL">Text 'Login' (str) should be 'Bem Vindo teste' (str)</msg>
+<msg time="2025-06-17T11:37:41.252620" level="INFO">Text: 'Bem Vindo teste'</msg>
 <arg>${element}</arg>
 <arg>equal</arg>
 <arg>Bem Vindo ${nome_inicial}[0]</arg>
@@ -108,45 +115,391 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="FAIL" start="2025-06-17T11:03:29.080490" elapsed="1.239278">Text 'Login' (str) should be 'Bem Vindo teste' (str)</status>
+<status status="PASS" start="2025-06-17T11:37:40.517269" elapsed="0.735479"/>
 </kw>
 <arg>${user}[name]</arg>
-<status status="FAIL" start="2025-06-17T11:03:29.072006" elapsed="1.247999">Text 'Login' (str) should be 'Bem Vindo teste' (str)</status>
+<status status="PASS" start="2025-06-17T11:37:40.506696" elapsed="0.746220"/>
 </kw>
 <kw name="Gerar token usuario - API" owner="common">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-17T11:37:41.254371" level="INFO">${body} = {'email': 'teste@teste.com', 'password': 'senha123'}</msg>
+<var>${body}</var>
+<arg>email=${user}[email]</arg>
+<arg>password=${user}[password]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-17T11:37:41.254026" elapsed="0.000381"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-17T11:37:41.254754" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Content-Type=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-17T11:37:41.254538" elapsed="0.000245"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-06-17T11:37:41.618907" level="INFO">POST Request : url=https://compassuol.serverest.dev/login 
+ path_url=/login 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '52'} 
+ body=b'{"email": "teste@teste.com", "password": "senha123"}' 
+ </msg>
+<msg time="2025-06-17T11:37:41.619178" level="INFO">POST Response : url=https://compassuol.serverest.dev/login 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '920f5a947f60d5467427791df23e8d8e', 'date': 'Tue, 17 Jun 2025 14:37:41 GMT', 'server': 'Google Frontend', 'Content-Length': '272'} 
+ body={
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsInBhc3N3b3JkIjoic2VuaGExMjMiLCJpYXQiOjE3NTAxNzEwNjEsImV4cCI6MTc1MDE3MTY2MX0.vKhZ-df7Hn0tO4GH6qhxXQ8rMJQc1UZq1bmDDW33Ywo"
+} 
+ </msg>
+<msg time="2025-06-17T11:37:41.619263" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-06-17T11:37:41.619823" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>restful-serverest</arg>
+<arg>url=/login</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=${STATUS_REQ}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-06-17T11:37:41.254897" elapsed="0.364971"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-06-17T11:37:41.620636" level="INFO">${json} = {'message': 'Login realizado com sucesso', 'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsInBhc3N3b3JkIjoic2VuaGExMjMiLCJpYXQiOjE3NTAxNzEwNjEsImV4cCI...</msg>
+<var>${json}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-06-17T11:37:41.620044" elapsed="0.000628"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-06-17T11:37:41.621074" level="INFO">${token} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsInBhc3N3b3JkIjoic2VuaGExMjMiLCJpYXQiOjE3NTAxNzEwNjEsImV4cCI6MTc1MDE3MTY2MX0.vKhZ-df7Hn0tO4GH6qhxXQ8rMJQc1UZq1bmDDW33Ywo</msg>
+<var>${token}</var>
+<arg>${json}</arg>
+<arg>authorization</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-06-17T11:37:41.620815" elapsed="0.000293"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-17T11:37:41.621961" level="INFO">${token_login} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsInBhc3N3b3JkIjoic2VuaGExMjMiLCJpYXQiOjE3NTAxNzEwNjEsImV4cCI6MTc1MDE3MTY2MX0.vKhZ-df7Hn0tO4GH6qhxXQ8rMJQc1UZq1bmDDW33Ywo</msg>
+<arg>${token_login}</arg>
+<arg>${token}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-17T11:37:41.621239" elapsed="0.000783"/>
+</kw>
+<return>
+<value>${token}</value>
+<status status="PASS" start="2025-06-17T11:37:41.622099" elapsed="0.000125"/>
+</return>
+<msg time="2025-06-17T11:37:41.622376" level="INFO">${token_login} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsInBhc3N3b3JkIjoic2VuaGExMjMiLCJpYXQiOjE3NTAxNzEwNjEsImV4cCI6MTc1MDE3MTY2MX0.vKhZ-df7Hn0tO4GH6qhxXQ8rMJQc1UZq1bmDDW33Ywo</msg>
+<var>${token_login}</var>
 <arg>${user}</arg>
-<status status="NOT RUN" start="2025-06-17T11:03:30.357722" elapsed="0.000146"/>
+<status status="PASS" start="2025-06-17T11:37:41.253584" elapsed="0.368821"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Token gerado: ${token_login}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-06-17T11:03:30.359137" elapsed="0.000220"/>
+<status status="PASS" start="2025-06-17T11:37:41.622641" elapsed="0.000279"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
-<msg time="2025-06-17T11:03:30.555119" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-17T11:37:41.934087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-06-17T11:03:30.360000" elapsed="0.195262"/>
+<status status="PASS" start="2025-06-17T11:37:41.623193" elapsed="0.311049"/>
 </kw>
-<msg time="2025-06-17T11:03:30.574932" level="INFO">Switching context to context=eb743bcf-074b-47b8-bbb4-1dc350e1e0a7 in CURRENT</msg>
-<msg time="2025-06-17T11:03:30.583392" level="INFO">Successfully changed active context: context=eb743bcf-074b-47b8-bbb4-1dc350e1e0a7</msg>
-<msg time="2025-06-17T11:03:30.702355" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2025-06-17T11:03:25.042050" elapsed="5.518579">Text 'Login' (str) should be 'Bem Vindo teste' (str)</status>
+<msg time="2025-06-17T11:37:41.949671" level="INFO">Switching context to context=b6fae800-a2ce-472e-a9b6-51fb2cb73d72 in CURRENT</msg>
+<msg time="2025-06-17T11:37:41.958416" level="INFO">Successfully changed active context: context=b6fae800-a2ce-472e-a9b6-51fb2cb73d72</msg>
+<msg time="2025-06-17T11:37:42.050018" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-06-17T11:37:36.347141" elapsed="5.587821"/>
 </test>
 <doc>Cenarios autenticaçao  de cadastro de usuarios</doc>
-<status status="FAIL" start="2025-06-17T11:03:24.287887" elapsed="6.428253"/>
+<status status="PASS" start="2025-06-17T11:37:35.567322" elapsed="6.489682"/>
+</suite>
+<suite id="s1-s2" name="Usuarios Tests" source="C:\serverest-robotframework-tests\tests\usuarios_tests.robot">
+<test id="s1-s2-t1" name="Cenario: Criar um novo usuário com administrador valido" line="9">
+<kw name="Criar Sessao" owner="common" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-17T11:37:42.080695" level="INFO">Switching browser to browser=4f5c6012-2f31-49bb-b319-683cfa6851c2</msg>
+<msg time="2025-06-17T11:37:42.082782" level="INFO">Successfully changed active browser: browser=4f5c6012-2f31-49bb-b319-683cfa6851c2</msg>
+<msg time="2025-06-17T11:37:42.082907" level="INFO">Reusing existing browser with id: browser=4f5c6012-2f31-49bb-b319-683cfa6851c2</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-17T11:37:42.080121" elapsed="0.002855"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-17T11:37:44.267277" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev</msg>
+<msg time="2025-06-17T11:37:44.267351" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-17T11:37:42.083171" elapsed="2.184403"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-06-17T11:37:44.268101" level="INFO">Creating Session using : alias=restful-serverest, url=https://compassuol.serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>alias=restful-serverest</arg>
+<arg>url=${API_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-06-17T11:37:44.267769" elapsed="0.000521"/>
+</kw>
+<status status="PASS" start="2025-06-17T11:37:42.079707" elapsed="2.188687"/>
+</kw>
+<kw name="Criar usuario como administrador" owner="usuarios_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-06-17T11:37:44.270541" level="INFO">${user} = {'name': 'teste', 'email': 'teste@teste.com', 'password': 'senha123', 'administrador': 'true'}</msg>
+<var>${user}</var>
+<arg>name=teste</arg>
+<arg>email=teste@teste.com</arg>
+<arg>password=senha123</arg>
+<arg>administrador=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-06-17T11:37:44.270218" elapsed="0.000362"/>
+</kw>
+<return>
+<value>${user}</value>
+<status status="PASS" start="2025-06-17T11:37:44.270666" elapsed="0.000119"/>
+</return>
+<msg time="2025-06-17T11:37:44.270947" level="INFO">${user} = {'name': 'teste', 'email': 'teste@teste.com', 'password': 'senha123', 'administrador': 'true'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-06-17T11:37:44.269782" elapsed="0.001306"/>
+</kw>
+<kw name="Ir para a página de inscrição" owner="usuarios_keywords">
+<kw name="Go To" owner="Browser">
+<msg time="2025-06-17T11:37:44.870116" level="INFO">Successfully opened URL https://compassuolfront.serverest.dev/cadastrarusuarios</msg>
+<arg>${BASE_URL}/cadastrarusuarios</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-06-17T11:37:44.273353" elapsed="0.597073"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-17T11:37:44.896094" level="INFO">Waited for Element with selector css=.font-robot at state visible</msg>
+<arg>css=.font-robot</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-17T11:37:44.870645" elapsed="0.025609"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-17T11:37:44.917613" level="INFO">Text: 'Cadastro'</msg>
+<arg>css=.font-robot</arg>
+<arg>equal</arg>
+<arg>Cadastro</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T11:37:44.896438" elapsed="0.021282"/>
+</kw>
+<status status="PASS" start="2025-06-17T11:37:44.272924" elapsed="0.644901"/>
+</kw>
+<kw name="Excluir usuário - API" owner="common">
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-06-17T11:37:45.295325" level="INFO">GET Request : url=https://compassuol.serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-06-17T11:37:45.295431" level="INFO">GET Response : url=https://compassuol.serverest.dev/usuarios 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': 'dc7c7902cea58a3d86842b784a3bbdcd', 'date': 'Tue, 17 Jun 2025 14:37:45 GMT', 'server': 'Google Frontend', 'Content-Length': '454'} 
+ body={
+    "quantidade": 2,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "teste",
+            "email": "teste@teste.com",
+            "password": "senha123",
+            "administrador": "true",
+            "_id": "hnImrcwH6zEORBjv"
+        }
+    ]
+} 
+ </msg>
+<msg time="2025-06-17T11:37:45.295532" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-06-17T11:37:45.295815" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>restful-serverest</arg>
+<arg>/usuarios</arg>
+<arg>expected_status=${STATUS_REQ}</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-06-17T11:37:44.918834" elapsed="0.377032"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2025-06-17T11:37:45.296706" level="INFO">${usuarios} = [{'nome': 'Fulano da Silva', 'email': 'fulano@qa.com', 'password': 'teste', 'administrador': 'true', '_id': '0uxuPY0cbmQhpEz1'}, {'nome': 'teste', 'email': 'teste@teste.com', 'password': 'senha123', '...</msg>
+<var>${usuarios}</var>
+<arg>${response.json()}</arg>
+<arg>usuarios</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.296055" elapsed="0.000688"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-06-17T11:37:45.297100" level="INFO">${id} = None</msg>
+<var>${id}</var>
+<arg>None</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.296887" elapsed="0.000246"/>
+</kw>
+<for flavor="IN">
+<iter>
+<if>
+<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${id}</var>
+<arg>${usuario["_id"]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-06-17T11:37:45.298041" elapsed="0.000092"/>
+</kw>
+<status status="NOT RUN" start="2025-06-17T11:37:45.297641" elapsed="0.000553"/>
+</branch>
+<status status="PASS" start="2025-06-17T11:37:45.297615" elapsed="0.000640"/>
+</if>
+<var name="${usuario}">{'nome': 'Fulano da Silva', 'email': 'fulano@qa.com', 'password': 'teste', 'administrador': 'true', '_id': '0uxuPY0cbmQhpEz1'}</var>
+<status status="PASS" start="2025-06-17T11:37:45.297507" elapsed="0.000779"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-06-17T11:37:45.299414" level="INFO">${id} = hnImrcwH6zEORBjv</msg>
+<var>${id}</var>
+<arg>${usuario["_id"]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.298894" elapsed="0.000556"/>
+</kw>
+<status status="PASS" start="2025-06-17T11:37:45.298598" elapsed="0.000916"/>
+</branch>
+<status status="PASS" start="2025-06-17T11:37:45.298574" elapsed="0.000992"/>
+</if>
+<var name="${usuario}">{'nome': 'teste', 'email': 'teste@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'hnImrcwH6zEORBjv'}</var>
+<status status="PASS" start="2025-06-17T11:37:45.298458" elapsed="0.001141"/>
+</iter>
+<var>${usuario}</var>
+<value>@{usuarios}</value>
+<status status="PASS" start="2025-06-17T11:37:45.297220" elapsed="0.002434"/>
+</for>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-06-17T11:37:45.467970" level="INFO">DELETE Request : url=https://compassuol.serverest.dev/usuarios/hnImrcwH6zEORBjv 
+ path_url=/usuarios/hnImrcwH6zEORBjv 
+ headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-06-17T11:37:45.468052" level="INFO">DELETE Response : url=https://compassuol.serverest.dev/usuarios/hnImrcwH6zEORBjv 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': 'ff9d2079dc83dd0186842b784a3bbf58', 'date': 'Tue, 17 Jun 2025 14:37:45 GMT', 'server': 'Google Frontend', 'Content-Length': '51'} 
+ body={
+    "message": "Registro excluído com sucesso"
+} 
+ </msg>
+<msg time="2025-06-17T11:37:45.468156" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<arg>restful-serverest</arg>
+<arg>/usuarios/${id}</arg>
+<arg>expected_status=${STATUS_REQ}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.299794" elapsed="0.168766"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-17T11:37:45.469568" level="INFO">${user_id} = hnImrcwH6zEORBjv</msg>
+<arg>${user_id}</arg>
+<arg>${id}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.468830" elapsed="0.000793"/>
+</kw>
+<arg>${user['email']}</arg>
+<status status="PASS" start="2025-06-17T11:37:44.918213" elapsed="0.551493"/>
+</kw>
+<kw name="Enviar formulário de inscrição" owner="usuarios_keywords">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T11:37:45.470742" level="INFO">Fills the text 'teste' in the given field.</msg>
+<arg>css=input[name=nome]</arg>
+<arg>${user}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.470303" elapsed="0.018609"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T11:37:45.489718" level="INFO">Fills the text 'teste@teste.com' in the given field.</msg>
+<arg>css=input[name=email]</arg>
+<arg>${user}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.489132" elapsed="0.017924"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T11:37:45.508110" level="INFO">Fills the text 'senha123' in the given field.</msg>
+<arg>css=input[name=password]</arg>
+<arg>${user}[password]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.507257" elapsed="0.015565"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-17T11:37:45.523481" level="INFO">Clicks the element 'css=input[name=administrador]'.</msg>
+<arg>css=input[name=administrador]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.523014" elapsed="0.046147"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-17T11:37:45.569807" level="INFO">Clicks the element 'css=button[type=submit] &gt;&gt; text=Cadastrar'.</msg>
+<arg>css=button[type=submit] &gt;&gt; text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.569345" elapsed="0.034940"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-17T11:37:50.605179" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-17T11:37:45.604479" elapsed="5.000804"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-06-17T11:37:45.469978" elapsed="5.135403"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-06-17T11:37:50.818313" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T11:37:50.674590" elapsed="0.143888"/>
+</kw>
+<msg time="2025-06-17T11:37:50.855550" level="INFO">Switching context to context=fc01963c-31f5-4b83-b795-f37feab507c7 in CURRENT</msg>
+<msg time="2025-06-17T11:37:50.863596" level="INFO">Successfully changed active context: context=fc01963c-31f5-4b83-b795-f37feab507c7</msg>
+<msg time="2025-06-17T11:37:51.009686" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-06-17T11:37:42.074852" elapsed="8.767503"/>
+</test>
+<doc>Cenarios de testes de cadastro de usuarios</doc>
+<status status="PASS" start="2025-06-17T11:37:42.062207" elapsed="8.966840"/>
+</suite>
+<status status="PASS" start="2025-06-17T11:37:35.537788" elapsed="15.509432"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login Tests" id="s1" pass="0" fail="1" skip="0">Login Tests</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="Login Tests" id="s1-s1" pass="1" fail="0" skip="0">Tests.Login Tests</stat>
+<stat name="Usuarios Tests" id="s1-s2" pass="1" fail="0" skip="0">Tests.Usuarios Tests</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-06-17T11:03:24.321045" level="WARN">Error in file 'c:\serverest-robotframework-tests\resources\common\common.resource' on line 66: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>

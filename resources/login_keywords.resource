@@ -6,6 +6,14 @@ Resource    ./common/common.resource
 *** Keywords ***
 
 
+Criar login valido 
+   ${user}    Create Dictionary
+    ...    name=teste
+    ...    email=teste@teste.com
+    ...    password=senha123 
+    RETURN    ${user}
+    
+
  Enviar formulário de login
 
     [Arguments]    ${user}    

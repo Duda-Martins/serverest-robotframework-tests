@@ -63,4 +63,4 @@ Gerar token usuario - API
     ${token}=   Get From Dictionary    ${json}    authorization
 
     Set Suite Variable    ${token_login}    ${token}
-    [Return]    ${token}
+    RETURN    ${token}
