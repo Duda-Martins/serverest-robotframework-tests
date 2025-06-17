@@ -1,23 +1,27 @@
 *** Settings ***
+
 Documentation    Keywords e imports comuns para todos os testes
 
+Library    Browser
 Library    RequestsLibrary
 Library    Collections
 Library    String
 Library    JSONLibrary
-Library    Browser
 
+Resource    ../usuarios_keywords.resource
+Resource    ../login_keywords.resource
 Resource    ../atualizar_produto.resource
 Resource    ../login.resource
 
 *** Variables ***
-${API_URL}    https://compassuol.serverest.dev
+${BASE_URL}    https://compassuolfront.serverest.dev
+${API_URL}      https://compassuol.serverest.dev
 ${STATUS_REQ}    any
-
-${URL_BASE}    https://compassuolfront.serverest.dev
 ${BROWSER}    chromium
 
+
 *** Keywords ***
+
 Abrir página
     New Browser    browser=${BROWSER}    headless=False
     New Page    ${URL_BASE}
@@ -30,33 +34,26 @@ Logar
     Enviar formulário de login   ${data}[usuario]
     O usuário deve estar logado   ${data}[usuario][nome]
 
-# API
-Sessão - API
+
+Criar Sessao
+    New Browser    browser=chromium    headless=False
+    New Page       ${BASE_URL}
+
     Create Session    alias=restful-serverest    url=${API_URL}
 
+    
 Excluir usuário - API
+    
     [Arguments]    ${email_usuario}
 
-    Sessão - API
+    ${response}=    GET On Session    restful-serverest    /usuarios    expected_status=${STATUS_REQ}
+    ${usuarios}=    Get From Dictionary    ${response.json()}    usuarios
 
-    ${response}    GET On Session
-        ...          alias=restful-serverest
-        ...          url=/usuarios
-        ...          expected_status=${STATUS_REQ}
-
-    ${json}    Set Variable    ${response.json()}
-
-    ${usuarios}=      Get From Dictionary    ${json}    usuarios
-    
     ${id}=    Set Variable    None
 
-    FOR    ${usuario}    IN    @{usuarios}
-        IF    $usuario["email"] == $email_usuario
-            ${id}=    Set Variable    ${usuario["_id"]}
-        END
-    END
 
-    DELETE On Session
+
+ DELETE On Session
     ...          alias=restful-serverest
     ...          url=/usuarios/${id}
     ...          expected_status=${STATUS_REQ}
@@ -107,6 +104,30 @@ Login usuário - API
 
     Log    ${TOKEN}
     Log To Console    ${TOKEN}
+
+
+Gerar token usuario - API
+    [Arguments]    ${user}
+
+    ${body}=    Create Dictionary
+    ...         email=${user}[email]
+    ...         password=${user}[password]
+
+    ${headers}=    Create Dictionary    Content-Type=application/json
+
+    ${response}=    POST On Session
+    ...             restful-serverest
+    ...             url=/login
+    ...             json=${body}
+    ...             headers=${headers}
+    ...             expected_status=${STATUS_REQ}
+
+     ${json}=    Set Variable    ${response.json()}
+    ${token}=   Get From Dictionary    ${json}    authorization
+
+    Set Suite Variable    ${token_login}    ${token}
+    RETURN    ${token}
+
 
 Excluir produto - API
     [Arguments]    ${nome-produto}
