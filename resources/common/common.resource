@@ -5,12 +5,32 @@ Library    RequestsLibrary
 Library    Collections
 Library    String
 Library    JSONLibrary
+Library    Browser
+
+Resource    ../atualizar_produto.resource
+Resource    ../login.resource
 
 *** Variables ***
 ${API_URL}    https://compassuol.serverest.dev
 ${STATUS_REQ}    any
 
+${URL_BASE}    https://compassuolfront.serverest.dev
+${BROWSER}    chromium
+
 *** Keywords ***
+Abrir página
+    New Browser    browser=${BROWSER}    headless=False
+    New Page    ${URL_BASE}
+
+Logar
+    ${data}    Load Json From File
+    ...    ${EXECDIR}/resources/fixtures/api.json
+    ...    encoding=utf-8
+
+    Enviar formulário de login   ${data}[usuario]
+    O usuário deve estar logado   ${data}[usuario][nome]
+
+# API
 Sessão - API
     Create Session    alias=restful-serverest    url=${API_URL}
 
@@ -58,9 +78,9 @@ Criar usuário - API
         ...          json=${body}
         ...          expected_status=${STATUS_REQ}
 
-        Set Test Variable    ${RESPOSTA}    ${resposta.json()}
-        Log    ${RESPOSTA}
-        Log to Console    ${RESPOSTA}
+    Set Test Variable    ${RESPOSTA}    ${resposta.json()}
+    Log    ${RESPOSTA}
+    Log to Console    ${RESPOSTA}
 
 Login usuário - API
     Sessão - API
@@ -93,14 +113,14 @@ Excluir produto - API
 
     Sessão - API
 
-    ${response}    GET On Session
+    ${resposta}    GET On Session
         ...          alias=restful-serverest
         ...          url=/produtos
         ...          expected_status=${STATUS_REQ}
 
-    ${json}    To Json    ${response.content}
+    Set Test Variable    ${RESPOSTA}    ${resposta.json()}
 
-    ${produtos}=      Get From Dictionary    ${json}    produtos
+    ${produtos}=      Get From Dictionary    ${RESPOSTA}    produtos
 
     FOR    ${produto}    IN    @{produtos}
         ${nome}    Get From Dictionary    ${produto}    nome
@@ -140,6 +160,8 @@ Criar produto - API
         ...          expected_status=${STATUS_REQ}
         ...          headers=${headers}
 
-        Set Test Variable    ${RESPOSTA}    ${resposta.json()}
-        Log    ${RESPOSTA}
-        Log to Console    ${RESPOSTA}
+    Set Test Variable    ${data}
+
+    Set Test Variable    ${RESPOSTA}    ${resposta.json()}
+    Log    ${RESPOSTA}
+    Log to Console    ${RESPOSTA}

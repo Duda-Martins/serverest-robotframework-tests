@@ -10,9 +10,9 @@
         "password": "123456"
     },
     "produto": {
-        "nome": "Mouse",
-        "preço": "12",
-        "descricao": "Um mouse novo",
+        "nome": "Mouse novo",
+        "preco": "12",
+        "descricao": "Um novo mouse",
         "quantidade": "4"
     }
 }
