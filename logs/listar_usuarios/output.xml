@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-17T16:23:11.853526" rpa="false" schemaversion="5">
+<suite id="s1" name="Listar Usuarios Tests" source="C:\Users\breme\OneDrive\Área de Trabalho\tests_web_serverest_squad\serverest-robotframework-tests\tests\listar_usuarios_tests.robot">
+<test id="s1-t1" name="Cenário de teste 04 - Validar a lista de usuários no Serverest para usuário adm" line="13">
+<kw name="Acessar o site serverest" owner="listar_usuarios_keyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-17T16:23:12.200704" level="INFO">Opening browser 'Chrome' to base url 'https://compassuolfront.serverest.dev'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-17T16:23:12.183847" elapsed="5.851715"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-17T16:23:18.035824" elapsed="0.026414"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h1[text()="Login"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-17T16:23:18.062499" elapsed="0.039051"/>
+</kw>
+<status status="PASS" start="2025-06-17T16:23:12.182896" elapsed="5.918830"/>
+</kw>
+<kw name="Logar com usuário administrador válido" owner="listar_usuarios_keyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-17T16:23:18.105017" level="INFO">Typing text 'qabre@admin.com' into text field 'css=input[data-testid="email"]'.</msg>
+<arg>css=input[data-testid="email"]</arg>
+<arg>${EMAIL_ADMIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T16:23:18.104546" elapsed="0.199043"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-17T16:23:18.304126" level="INFO">Typing text 'admin123' into text field 'css=input[data-testid="senha"]'.</msg>
+<arg>css=input[data-testid="senha"]</arg>
+<arg>${SENHA_ADMIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T16:23:18.303829" elapsed="0.085228"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-17T16:23:18.389696" level="INFO">Clicking button 'css=button[data-testid="entrar"]'.</msg>
+<arg>css=button[data-testid="entrar"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T16:23:18.389476" elapsed="0.081039"/>
+</kw>
+<status status="PASS" start="2025-06-17T16:23:18.103718" elapsed="0.366954"/>
+</kw>
+<kw name="Acessar página de lista de usuários" owner="listar_usuarios_keyword">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css=[data-testid="listar-usuarios"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-17T16:23:18.471327" elapsed="1.326051"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-17T16:23:19.797868" level="INFO">Clicking element 'css=[data-testid="listar-usuarios"]'.</msg>
+<arg>css=[data-testid="listar-usuarios"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-17T16:23:19.797555" elapsed="0.093588"/>
+</kw>
+<status status="PASS" start="2025-06-17T16:23:18.471049" elapsed="1.420276"/>
+</kw>
+<status status="PASS" start="2025-06-17T16:23:12.182121" elapsed="7.709573"/>
+</test>
+<status status="PASS" start="2025-06-17T16:23:11.855455" elapsed="8.037154"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Listar Usuarios Tests" id="s1" pass="1" fail="0" skip="0">Listar Usuarios Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-06-17T16:23:12.179452" level="ERROR">Error in file 'C:\Users\breme\OneDrive\Área de Trabalho\tests_web_serverest_squad\serverest-robotframework-tests\resources\listar_usuarios_keyword.robot' on line 2: Error in file 'C:\Users\breme\OneDrive\Área de Trabalho\tests_web_serverest_squad\serverest-robotframework-tests\tests\listar_usuarios_tests.robot' on line 12: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
