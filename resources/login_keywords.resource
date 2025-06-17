@@ -18,4 +18,3 @@ Realizar login com credenciais de administrador valido
     Wait For Elements State    p.lead         visible    5s
     ${mensagem}=               Get Text       p.lead
     Should Be Equal            ${mensagem}    Este é seu sistema para administrar seu ecommerce.
-

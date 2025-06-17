@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    Keywords do Endpoint Produtos
 Library    Browser
 Library    Collections
 Library    FakerLibrary
@@ -14,7 +15,7 @@ Cadastrar um produto valido
     Should Be Equal            ${titulo}    Cadastro de Produtos
 
     # Preenche e cadastra
-    ${nome_produto}=    FakerLibrary.Name
+    ${nome_produto}=      FakerLibrary.Name
     Set Suite Variable    ${nome_produto}
 
     Fill Text    [data-testid="nome"]         ${nome_produto}
@@ -42,4 +43,3 @@ Listagem de produtos validos
         END
     END
     Should Be True    ${produto_encontrado}    Produto ${nome_produto} não encontrado na tabela.
-    Take Screenshot
