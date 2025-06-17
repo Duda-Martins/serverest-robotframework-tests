@@ -37,4 +37,4 @@ Criar login valido
     
     Get Text    ${element}    equal    Bem Vindo ${nome_inicial}[0] 
 
-    
+  
