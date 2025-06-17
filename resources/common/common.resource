@@ -8,6 +8,7 @@ Library    String
 Library    JSONLibrary
 
 Resource    ../usuarios_keywords.resource
+Resource    ../login_keywords.resource
 
 
 *** Variables ***
@@ -41,3 +42,25 @@ Excluir usuário - API
 
     DELETE On Session    restful-serverest    /usuarios/${id}    expected_status=${STATUS_REQ}
     Set Suite Variable    ${user_id}    ${id}  #armazenar o id 
+
+Gerar token usuario - API
+    [Arguments]    ${user}
+
+    ${body}=    Create Dictionary
+    ...         email=${user}[email]
+    ...         password=${user}[password]
+
+    ${headers}=    Create Dictionary    Content-Type=application/json
+
+    ${response}=    POST On Session
+    ...             restful-serverest
+    ...             url=/login
+    ...             json=${body}
+    ...             headers=${headers}
+    ...             expected_status=${STATUS_REQ}
+
+     ${json}=    Set Variable    ${response.json()}
+    ${token}=   Get From Dictionary    ${json}    authorization
+
+    Set Suite Variable    ${token_login}    ${token}
+    [Return]    ${token}
