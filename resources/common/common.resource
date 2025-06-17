@@ -11,6 +11,7 @@ Library    JSONLibrary
 Resource    ../usuarios_keywords.resource
 Resource    ../login_keywords.resource
 Resource    ../atualizar_produto.resource
+Resource    ../excuir_produto.resource
 Resource    ../login.resource
 
 *** Variables ***
