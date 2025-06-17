@@ -27,3 +27,4 @@ Enviar formulário de inscrição
     Click    css=button[type=submit] >> text=Cadastrar 
 
     Sleep    5
+

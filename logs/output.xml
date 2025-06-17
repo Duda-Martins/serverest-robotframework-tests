@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-16T23:15:05.095774" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-17T09:32:24.245076" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\serverest-robotframework-tests\tests">
 <suite id="s1-s1" name="Usuarios Tests" source="C:\serverest-robotframework-tests\tests\usuarios_tests.robot">
 <test id="s1-s1-t1" name="Cenario: Criar um novo usuário com administrador valido" line="9">
 <kw name="Criar Sessao" owner="common" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-06-16T23:15:06.131950" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\70b84ff4-1c7e-44e8-a4a0-6b0b6bb9d5f6"}</msg>
-<msg time="2025-06-16T23:15:06.170175" level="INFO">Starting Browser process C:\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:56381</msg>
-<msg time="2025-06-16T23:15:07.534245" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\70b84ff4-1c7e-44e8-a4a0-6b0b6bb9d5f6"}</msg>
+<msg time="2025-06-17T09:32:25.182715" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\9f7a1c34-ee52-4bec-b691-7aaa5b76efae"}</msg>
+<msg time="2025-06-17T09:32:25.221100" level="INFO">Starting Browser process C:\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:59181</msg>
+<msg time="2025-06-17T09:32:26.797444" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\serverest-robotframework-tests\\logs\\browser\\traces\\temp\\9f7a1c34-ee52-4bec-b691-7aaa5b76efae"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-06-16T23:15:06.131262" elapsed="1.403204"/>
+<status status="PASS" start="2025-06-17T09:32:25.181968" elapsed="1.615797"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-06-16T23:15:10.146160" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev</msg>
-<msg time="2025-06-16T23:15:10.146238" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-06-17T09:32:29.434128" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev</msg>
+<msg time="2025-06-17T09:32:29.434207" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-06-16T23:15:07.534801" elapsed="2.611588"/>
+<status status="PASS" start="2025-06-17T09:32:26.798022" elapsed="2.636322"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-06-16T23:15:10.146972" level="INFO">Creating Session using : alias=restful-serverest, url=https://compassuol.serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-06-17T09:32:29.434883" level="INFO">Creating Session using : alias=restful-serverest, url=https://compassuol.serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>alias=restful-serverest</arg>
 <arg>url=${API_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-06-16T23:15:10.146599" elapsed="0.000608"/>
+<status status="PASS" start="2025-06-17T09:32:29.434551" elapsed="0.000531"/>
 </kw>
-<status status="PASS" start="2025-06-16T23:15:06.130461" elapsed="4.016862"/>
+<status status="PASS" start="2025-06-17T09:32:25.181112" elapsed="4.254079"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-06-16T23:15:10.149404" level="INFO">${user} = {'name': 'fulano', 'email': 'fulano20@teste.com', 'password': 'senha123', 'administrador': 'true'}</msg>
+<msg time="2025-06-17T09:32:29.436002" level="INFO">${user} = {'name': 'teste', 'email': 'teste@teste.com', 'password': 'senha123', 'administrador': 'true'}</msg>
 <var>${user}</var>
-<arg>name=fulano</arg>
-<arg>email=fulano20@teste.com</arg>
+<arg>name=teste</arg>
+<arg>email=teste@teste.com</arg>
 <arg>password=senha123</arg>
 <arg>administrador=true</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-06-16T23:15:10.148919" elapsed="0.000531"/>
+<status status="PASS" start="2025-06-17T09:32:29.435539" elapsed="0.000508"/>
 </kw>
 <kw name="Ir para a página de inscrição" owner="usuarios_keywords">
 <kw name="Go To" owner="Browser">
-<msg time="2025-06-16T23:15:10.759567" level="INFO">Successfully opened URL https://compassuolfront.serverest.dev/cadastrarusuarios</msg>
+<msg time="2025-06-17T09:32:30.049979" level="INFO">Successfully opened URL https://compassuolfront.serverest.dev/cadastrarusuarios</msg>
 <arg>${BASE_URL}/cadastrarusuarios</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2025-06-16T23:15:10.150164" elapsed="0.609591"/>
+<status status="PASS" start="2025-06-17T09:32:29.436820" elapsed="0.613325"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-06-16T23:15:10.790687" level="INFO">Waited for Element with selector css=.font-robot at state visible</msg>
+<msg time="2025-06-17T09:32:30.080468" level="INFO">Waited for Element with selector css=.font-robot at state visible</msg>
 <arg>css=.font-robot</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-06-16T23:15:10.759979" elapsed="0.030852"/>
+<status status="PASS" start="2025-06-17T09:32:30.050378" elapsed="0.030243"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-06-16T23:15:10.814763" level="INFO">Text: 'Cadastro'</msg>
+<msg time="2025-06-17T09:32:30.104026" level="INFO">Text: 'Cadastro'</msg>
 <arg>css=.font-robot</arg>
 <arg>equal</arg>
 <arg>Cadastro</arg>
@@ -71,37 +71,23 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-16T23:15:10.790999" elapsed="0.023881"/>
+<status status="PASS" start="2025-06-17T09:32:30.080808" elapsed="0.023327"/>
 </kw>
-<status status="PASS" start="2025-06-16T23:15:10.149803" elapsed="0.665191"/>
+<status status="PASS" start="2025-06-17T09:32:29.436420" elapsed="0.667835"/>
 </kw>
 <kw name="Excluir usuário - API" owner="common">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2025-06-16T23:15:11.341463" level="INFO">GET Request : url=https://compassuol.serverest.dev/usuarios 
+<msg time="2025-06-17T09:32:30.478142" level="INFO">GET Request : url=https://compassuol.serverest.dev/usuarios 
  path_url=/usuarios 
  headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2025-06-16T23:15:11.341654" level="INFO">GET Response : url=https://compassuol.serverest.dev/usuarios 
+<msg time="2025-06-17T09:32:30.478260" level="INFO">GET Response : url=https://compassuol.serverest.dev/usuarios 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': 'c22b6b5a2a9674f27ef55e0755fcfceb;o=1', 'date': 'Tue, 17 Jun 2025 02:15:11 GMT', 'server': 'Google Frontend', 'Content-Length': '31410'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '6871cf5244297844bdc1e93a43ab82e6;o=1', 'date': 'Tue, 17 Jun 2025 12:32:30 GMT', 'server': 'Google Frontend', 'Content-Length': '866'} 
  body={
-    "quantidade": 149,
+    "quantidade": 4,
     "usuarios": [
-        {
-            "nome": "Ciclano",
-            "email": "Betty.Torp@hotmail.com",
-            "password": "teste",
-            "administrador": "true",
-            "_id": "0bF2qDk1GVPfL0dV"
-        },
-        {
-            "nome": "teste ",
-            "email": "teste01@teste.com",
-            "password": "teste123",
-            "administrador": "false",
-            "_id": "0owy8UKLMmIc6LFC"
-        },
         {
             "nome": "Fulano da Silva",
             "email": "fulano@qa.com",
@@ -110,344 +96,53 @@
             "_id": "0uxuPY0cbmQhpEz1"
         },
         {
-            "nome": "fulane31lson da silva",
-            "email": "te2sta42ndo@huhu.com",
-            "password": "pwrd123",
-            "administrador": "true",
-            "_id": "1upjflPVP5946UZX"
-        },
-        {
             "nome": "fulano",
-            "email": "fulano14@teste.com",
+            "email": "fulano21@teste.com",
             "password": "senha123",
             "administrador": "true",
-            "_id": "2zlCVJ87ZHRPANMG"
-        },
-        {
-            "nome": "Raique",
-            "email": "ra@gmail.com",
-            "password": "1234",
-            "administrador": "false",
-            "_id": "43cBo4b2rwJ4iFjA"
-        },
-        {
-            "nome": "User7600",
-            "email": "user2563@qa.com",
-            "password": "Pass7926",
-            "administrador": "false",
-            "_id": "4KEuGehNRAHFRJqu"
-        },
-        {
-            "nome": "a",
-            "email": "a@gmail.com",
-            "password": "123456",
-            "administrador": "false",
-            "_id": "4O9ehx0Lk3gI0eq6"
-        },
-        {
-            "nome": "   ",
-            "email": "Dina.Koss@hotmail.com",
-            "password": "senha",
-            "administrador": "true",
-            "_id": "5wB1o8U6UXDGHg2n"
-        },
-        {
-            "nome": "fulano 04",
-            "email": "fulano04@teste.com",
-            "password": "senha123",
-            "administrador": "true",
-            "_id": "6DVndLuT16shkhtd"
-        },
-        {
-            "nome": "Robot Teste 4042",
-            "email": "user4042@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "6KuuS0keVrc8V46y"
-        },
-        {
-            "nome": "fulano",
-            "email": "fulano22@teste.com",
-            "password": "senha123",
-            "administrador": "true",
-            "_id": "6yCfyHfWFTB41kyZ"
-        },
-        {
-            "nome": "tesradsfs",
-            "email": "asdfas@gmail.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "7RZQgwfM3vKeRAi6"
-        },
-        {
-            "nome": "Robot Teste 5026",
-            "email": "user5026@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "7d3rlPtG342sTyyR"
-        },
-        {
-            "nome": "Robot Teste 4072",
-            "email": "user4072@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "89PZVsarWaQoZlsQ"
-        },
-        {
-            "nome": "dgsdgsfds",
-            "email": "gasdsfghfhd@gmail.com",
-            "password": "1235478",
-            "administrador": "true",
-            "_id": "89j5dIdLqG1aqGKG"
-        },
-        {
-            "nome": "Robot Teste 2913",
-            "email": "user2913@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "8iNHjw1k5yjNO7pX"
-        },
-        {
-            "nome": "Robot Teste 2225",
-            "email": "user2225@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "9aQKzJT0sZon5bRA"
-        },
-        {
-            "nome": "tester",
-            "email": "a1@a.com",
-            "password": "pwd123",
-            "administrador": "true",
-            "_id": "9pTH80Z4d8bh0hH4"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario7897@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "AY7GximVFJ6Pf6Rf"
-        },
-        {
-            "nome": "fulaninho",
-            "email": "fulaninho@gmail.com",
-            "password": "teste123",
-            "administrador": "true",
-            "_id": "Ar363MsdNb0hCflD"
-        },
-        {
-            "nome": "fulano 11",
-            "email": "fulano11@teste.com",
-            "password": "senha123",
-            "administrador": "true",
-            "_id": "B5GpRYgqdFIRClNj"
-        },
-        {
-            "nome": "Robot Teste 7988",
-            "email": "user7988@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "BQLHfJQcHyGMjVWF"
-        },
-        {
-            "nome": "Mack Reichert",
-            "email": "Mae80@hotmail.com",
-            "password": " ",
-            "administrador": "true",
-            "_id": "CU0ay2kLVtNWvcaq"
-        },
-        {
-            "nome": "asfsdgdffg",
-            "email": "1234@gmail.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "Cgk7jhhjcPtJiazf"
-        },
-        {
-            "nome": "ana",
-            "email": "qana@gmail.com",
-            "password": "1234",
-            "administrador": "true",
-            "_id": "DI9DukTUXBQPeq8k"
-        },
-        {
-            "nome": "Robot Teste 3988",
-            "email": "user3988@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "DsCvSlRofsE5WMFo"
-        },
-        {
-            "nome": "Raique Alfredo",
-            "email": "raiqueee01@gmail.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "E2INz1Tz1M2WGbvZ"
-        },
-        {
-            "nome": "Caso de teste 3",
-            "email": "O'Conner@gmail.com",
-            "password": "teste",
-            "administrador": "true",
-            "_id": "F7vmxiRm2QlA9vIS"
-        },
-        {
-            "nome": "Robot Teste 2179",
-            "email": "user2179@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "FFgLjE6NNDnReqoU"
-        },
-        {
-            "nome": "nome teste",
-            "email": "teste@teste.com",
-            "password": "teste123",
-            "administrador": "false",
-            "_id": "FlaEZ0IM96Ob138D"
-        },
-        {
-            "nome": "fulano",
-            "email": "fulano17@teste.com",
-            "password": "senha123",
-            "administrador": "true",
-            "_id": "G0UwIgo6qY5IN7Zu"
-        },
-        {
-            "nome": "fulano 10",
-            "email": "fulano10@teste.com",
-            "password": "senha123",
-            "administrador": "true",
-            "_id": "GUy8lwq6pNAh1j4G"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario4067@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "H4WD3TOwPWD72xMy"
-        },
-        {
-            "nome": "Robot Test",
-            "email": "robot@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "HNVh35btrxmzHd1F"
-        },
-        {
-            "nome": "fulano 12",
-            "email": "fulano12@teste.com",
-            "password": "senha123",
-            "administrador": "true",
-            "_id": "HcsjhNq5W9anH6Hj"
-        },
-        {
-            "nome": "tester",
-            "email": "a@a.com",
-            "password": "pwd123",
-            "administrador": "false",
-            "_id": "HeW8OiBgho3mmJqG"
+            "_id": "3vNLq6QkpKbjf5lN"
         },
         {
             "nome": "fulano",
             "email": "fulano20@teste.com",
             "password": "senha123",
             "administrador": "true",
-            "_id": "HeubDOwoEsh95N85"
+            "_id": "59ECeltnWsKcmcjC"
         },
         {
-            "nome": "Caso de teste 7",
-            "email": "Lexie_Abbott73@yahoo.com",
-            "password": "1234",
+            "nome": "fulano",
+            "email": "fulano@teste.com",
+            "password": "senha123",
             "administrador": "true",
-            "_id": "HuE873kqGq4m8iwW"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario7655@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "INiNtqFWbeXGgUIh"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario3996@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "IT5mSZiPfDT3MSDY"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario9459@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "JG5i7sLWO7jh4Cyv"
-        },
-        {
-            "nome": "Robot Teste 7803",
-            "email": "user7803@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "KKgC7sxb28qmteef"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario2511@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "KepAFcjXoSfSzGAE"
-        },
-        {
-            "nome": "Robot Teste 9357",
-            "email": "user9357@teste.com",
-            "password": "123456",
-            "administrador": "true",
-            "_id": "KyuvnnGNrNzmycYo"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario9697@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-            "_id": "MBAa1zOUtlUf7cXp"
-        },
-        {
-            "nome": "ola",
-            "email": "ola@gmail.com",
-            "password": "ola",
-            "administrador": "false",
-            "_id": "MJH5iNyZQeyCmqnW"
-        },
-        {
-            "nome": "Usuário Teste",
-            "email": "usuario6808@teste.com",
-            "password": "Test1234!",
-            "administrador": "false",
-... (set the log level to DEBUG or TRACE to see the full content) 
+            "_id": "o4Z9DNShQcILVsCC"
+        }
+    ]
+} 
  </msg>
-<msg time="2025-06-16T23:15:11.342071" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-06-17T09:32:30.478335" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-06-16T23:15:11.342392" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-06-17T09:32:30.478648" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>restful-serverest</arg>
 <arg>/usuarios</arg>
 <arg>expected_status=${STATUS_REQ}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-06-16T23:15:10.816035" elapsed="0.526409"/>
+<status status="PASS" start="2025-06-17T09:32:30.105287" elapsed="0.373400"/>
 </kw>
 <kw name="Get From Dictionary" owner="Collections">
-<msg time="2025-06-16T23:15:11.344084" level="INFO">${usuarios} = [{'nome': 'Ciclano', 'email': 'Betty.Torp@hotmail.com', 'password': 'teste', 'administrador': 'true', '_id': '0bF2qDk1GVPfL0dV'}, {'nome': 'teste ', 'email': 'teste01@teste.com', 'password': 'teste123...</msg>
+<msg time="2025-06-17T09:32:30.479476" level="INFO">${usuarios} = [{'nome': 'Fulano da Silva', 'email': 'fulano@qa.com', 'password': 'teste', 'administrador': 'true', '_id': '0uxuPY0cbmQhpEz1'}, {'nome': 'fulano', 'email': 'fulano21@teste.com', 'password': 'senha123...</msg>
 <var>${usuarios}</var>
 <arg>${response.json()}</arg>
 <arg>usuarios</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.342686" elapsed="0.001456"/>
+<status status="PASS" start="2025-06-17T09:32:30.478866" elapsed="0.000642"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-06-16T23:15:11.344690" level="INFO">${id} = None</msg>
+<msg time="2025-06-17T09:32:30.479830" level="INFO">${id} = None</msg>
 <var>${id}</var>
 <arg>None</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.344323" elapsed="0.000417"/>
+<status status="PASS" start="2025-06-17T09:32:30.479638" elapsed="0.000218"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -457,46 +152,14 @@
 <var>${id}</var>
 <arg>${usuario["_id"]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.346154" elapsed="0.000101"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.480780" elapsed="0.000071"/>
 </kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.345747" elapsed="0.000583"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.480494" elapsed="0.000409"/>
 </branch>
-<status status="PASS" start="2025-06-16T23:15:11.345710" elapsed="0.000688"/>
-</if>
-<var name="${usuario}">{'nome': 'Ciclano', 'email': 'Betty.Torp@hotmail.com', 'password': 'teste', 'administrador': 'true', '_id': '0bF2qDk1GVPfL0dV'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.345535" elapsed="0.000901"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.347123" elapsed="0.000096"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.346783" elapsed="0.000506"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.346757" elapsed="0.000589"/>
-</if>
-<var name="${usuario}">{'nome': 'teste ', 'email': 'teste01@teste.com', 'password': 'teste123', 'administrador': 'false', '_id': '0owy8UKLMmIc6LFC'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.346633" elapsed="0.000746"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.347883" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.347656" elapsed="0.000346"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.347639" elapsed="0.000402"/>
+<status status="PASS" start="2025-06-17T09:32:30.480470" elapsed="0.000477"/>
 </if>
 <var name="${usuario}">{'nome': 'Fulano da Silva', 'email': 'fulano@qa.com', 'password': 'teste', 'administrador': 'true', '_id': '0uxuPY0cbmQhpEz1'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.347547" elapsed="0.000520"/>
+<status status="PASS" start="2025-06-17T09:32:30.480362" elapsed="0.000611"/>
 </iter>
 <iter>
 <if>
@@ -505,14 +168,14 @@
 <var>${id}</var>
 <arg>${usuario["_id"]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.348512" elapsed="0.000074"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.481472" elapsed="0.000068"/>
 </kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.348290" elapsed="0.000368"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.481208" elapsed="0.000381"/>
 </branch>
-<status status="PASS" start="2025-06-16T23:15:11.348273" elapsed="0.000429"/>
+<status status="PASS" start="2025-06-17T09:32:30.481191" elapsed="0.000436"/>
 </if>
-<var name="${usuario}">{'nome': 'fulane31lson da silva', 'email': 'te2sta42ndo@huhu.com', 'password': 'pwrd123', 'administrador': 'true', '_id': '1upjflPVP5946UZX'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.348192" elapsed="0.000549"/>
+<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano21@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': '3vNLq6QkpKbjf5lN'}</var>
+<status status="PASS" start="2025-06-17T09:32:30.481107" elapsed="0.000544"/>
 </iter>
 <iter>
 <if>
@@ -521,14 +184,14 @@
 <var>${id}</var>
 <arg>${usuario["_id"]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.349347" elapsed="0.000071"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.482109" elapsed="0.000078"/>
 </kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.349107" elapsed="0.000363"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.481886" elapsed="0.000351"/>
 </branch>
-<status status="PASS" start="2025-06-16T23:15:11.349070" elapsed="0.000441"/>
+<status status="PASS" start="2025-06-17T09:32:30.481869" elapsed="0.000418"/>
 </if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano14@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': '2zlCVJ87ZHRPANMG'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.348934" elapsed="0.000600"/>
+<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano20@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': '59ECeltnWsKcmcjC'}</var>
+<status status="PASS" start="2025-06-17T09:32:30.481775" elapsed="0.000547"/>
 </iter>
 <iter>
 <if>
@@ -537,2400 +200,118 @@
 <var>${id}</var>
 <arg>${usuario["_id"]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.350031" elapsed="0.000096"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.482765" elapsed="0.000066"/>
 </kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.349760" elapsed="0.000426"/>
+<status status="NOT RUN" start="2025-06-17T09:32:30.482540" elapsed="0.000342"/>
 </branch>
-<status status="PASS" start="2025-06-16T23:15:11.349742" elapsed="0.000490"/>
+<status status="PASS" start="2025-06-17T09:32:30.482524" elapsed="0.000394"/>
 </if>
-<var name="${usuario}">{'nome': 'Raique', 'email': 'ra@gmail.com', 'password': '1234', 'administrador': 'false', '_id': '43cBo4b2rwJ4iFjA'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.349662" elapsed="0.000598"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.351021" elapsed="0.000126"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.350601" elapsed="0.000617"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.350570" elapsed="0.000698"/>
-</if>
-<var name="${usuario}">{'nome': 'User7600', 'email': 'user2563@qa.com', 'password': 'Pass7926', 'administrador': 'false', '_id': '4KEuGehNRAHFRJqu'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.350427" elapsed="0.000873"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.352026" elapsed="0.000086"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.351620" elapsed="0.000553"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.351597" elapsed="0.000616"/>
-</if>
-<var name="${usuario}">{'nome': 'a', 'email': 'a@gmail.com', 'password': '123456', 'administrador': 'false', '_id': '4O9ehx0Lk3gI0eq6'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.351471" elapsed="0.000769"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.352824" elapsed="0.000081"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.352532" elapsed="0.000478"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.352511" elapsed="0.000546"/>
-</if>
-<var name="${usuario}">{'nome': '   ', 'email': 'Dina.Koss@hotmail.com', 'password': 'senha', 'administrador': 'true', '_id': '5wB1o8U6UXDGHg2n'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.352394" elapsed="0.000689"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.353647" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.353374" elapsed="0.000401"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.353352" elapsed="0.000469"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 04', 'email': 'fulano04@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': '6DVndLuT16shkhtd'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.353232" elapsed="0.000614"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.354342" elapsed="0.000744"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.354087" elapsed="0.001088"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.354069" elapsed="0.001158"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4042', 'email': 'user4042@teste.com', 'password': '123456', 'administrador': 'true', '_id': '6KuuS0keVrc8V46y'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.353985" elapsed="0.001271"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.355858" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.355571" elapsed="0.000471"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.355550" elapsed="0.000544"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano22@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': '6yCfyHfWFTB41kyZ'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.355436" elapsed="0.000688"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.356731" elapsed="0.000089"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.356426" elapsed="0.000457"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.356403" elapsed="0.000523"/>
-</if>
-<var name="${usuario}">{'nome': 'tesradsfs', 'email': 'asdfas@gmail.com', 'password': '123456', 'administrador': 'true', '_id': '7RZQgwfM3vKeRAi6'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.356288" elapsed="0.000664"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.357668" elapsed="0.000087"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.357322" elapsed="0.000520"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.357294" elapsed="0.000644"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 5026', 'email': 'user5026@teste.com', 'password': '123456', 'administrador': 'true', '_id': '7d3rlPtG342sTyyR'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.357141" elapsed="0.000830"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.358735" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.358453" elapsed="0.000413"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.358430" elapsed="0.000477"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4072', 'email': 'user4072@teste.com', 'password': '123456', 'administrador': 'true', '_id': '89PZVsarWaQoZlsQ'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.358291" elapsed="0.000641"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.359392" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.359172" elapsed="0.000340"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.359154" elapsed="0.000398"/>
-</if>
-<var name="${usuario}">{'nome': 'dgsdgsfds', 'email': 'gasdsfghfhd@gmail.com', 'password': '1235478', 'administrador': 'true', '_id': '89j5dIdLqG1aqGKG'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.359065" elapsed="0.000511"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.360013" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.359798" elapsed="0.000333"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.359781" elapsed="0.000386"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2913', 'email': 'user2913@teste.com', 'password': '123456', 'administrador': 'true', '_id': '8iNHjw1k5yjNO7pX'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.359696" elapsed="0.000493"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.360623" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.360408" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.360391" elapsed="0.000388"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2225', 'email': 'user2225@teste.com', 'password': '123456', 'administrador': 'true', '_id': '9aQKzJT0sZon5bRA'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.360310" elapsed="0.000492"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.361236" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.361023" elapsed="0.000343"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.360996" elapsed="0.000612"/>
-</if>
-<var name="${usuario}">{'nome': 'tester', 'email': 'a1@a.com', 'password': 'pwd123', 'administrador': 'true', '_id': '9pTH80Z4d8bh0hH4'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.360918" elapsed="0.000757"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.362498" elapsed="0.000194"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.362170" elapsed="0.000597"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.362145" elapsed="0.000672"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario7897@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'AY7GximVFJ6Pf6Rf'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.361997" elapsed="0.000849"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.363544" elapsed="0.000078"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.363244" elapsed="0.000435"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.363220" elapsed="0.000498"/>
-</if>
-<var name="${usuario}">{'nome': 'fulaninho', 'email': 'fulaninho@gmail.com', 'password': 'teste123', 'administrador': 'true', '_id': 'Ar363MsdNb0hCflD'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.363030" elapsed="0.000712"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.364219" elapsed="0.000075"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.363985" elapsed="0.000361"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.363966" elapsed="0.000420"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 11', 'email': 'fulano11@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'B5GpRYgqdFIRClNj'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.363879" elapsed="0.000529"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.364927" elapsed="0.000078"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.364652" elapsed="0.000411"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.364633" elapsed="0.000471"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7988', 'email': 'user7988@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'BQLHfJQcHyGMjVWF'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.364536" elapsed="0.000593"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.365802" elapsed="0.000102"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.365422" elapsed="0.000554"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.365397" elapsed="0.000625"/>
-</if>
-<var name="${usuario}">{'nome': 'Mack Reichert', 'email': 'Mae80@hotmail.com', 'password': ' ', 'administrador': 'true', '_id': 'CU0ay2kLVtNWvcaq'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.365291" elapsed="0.000758"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.366651" elapsed="0.000092"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.366362" elapsed="0.000438"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.366340" elapsed="0.000499"/>
-</if>
-<var name="${usuario}">{'nome': 'asfsdgdffg', 'email': '1234@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'Cgk7jhhjcPtJiazf'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.366218" elapsed="0.000647"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.367348" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.367107" elapsed="0.000363"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.367089" elapsed="0.000421"/>
-</if>
-<var name="${usuario}">{'nome': 'ana', 'email': 'qana@gmail.com', 'password': '1234', 'administrador': 'true', '_id': 'DI9DukTUXBQPeq8k'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.367008" elapsed="0.000525"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.368251" elapsed="0.000078"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.367756" elapsed="0.000625"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.367739" elapsed="0.000682"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3988', 'email': 'user3988@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'DsCvSlRofsE5WMFo'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.367656" elapsed="0.000788"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.368885" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.368670" elapsed="0.000340"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.368653" elapsed="0.000393"/>
-</if>
-<var name="${usuario}">{'nome': 'Raique Alfredo', 'email': 'raiqueee01@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'E2INz1Tz1M2WGbvZ'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.368565" elapsed="0.000505"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.369504" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.369291" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.369274" elapsed="0.000387"/>
-</if>
-<var name="${usuario}">{'nome': 'Caso de teste 3', 'email': "O'Conner@gmail.com", 'password': 'teste', 'administrador': 'true', '_id': 'F7vmxiRm2QlA9vIS'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.369187" elapsed="0.000497"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.370112" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.369901" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.369881" elapsed="0.000433"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2179', 'email': 'user2179@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'FFgLjE6NNDnReqoU'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.369801" elapsed="0.000539"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.370773" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.370557" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.370540" elapsed="0.000393"/>
-</if>
-<var name="${usuario}">{'nome': 'nome teste', 'email': 'teste@teste.com', 'password': 'teste123', 'administrador': 'false', '_id': 'FlaEZ0IM96Ob138D'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.370459" elapsed="0.000497"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.371387" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.371169" elapsed="0.000337"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.371153" elapsed="0.000389"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano17@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'G0UwIgo6qY5IN7Zu'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.371073" elapsed="0.000496"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.371995" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.371780" elapsed="0.000336"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.371764" elapsed="0.000388"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 10', 'email': 'fulano10@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'GUy8lwq6pNAh1j4G'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.371685" elapsed="0.000489"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.372609" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.372395" elapsed="0.000332"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.372379" elapsed="0.000383"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario4067@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'H4WD3TOwPWD72xMy'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.372297" elapsed="0.000487"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.373224" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.373003" elapsed="0.000340"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.372987" elapsed="0.000392"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Test', 'email': 'robot@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'HNVh35btrxmzHd1F'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.372908" elapsed="0.000493"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.373829" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.373617" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.373601" elapsed="0.000388"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 12', 'email': 'fulano12@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'HcsjhNq5W9anH6Hj'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.373522" elapsed="0.000489"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.374447" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.374230" elapsed="0.000341"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.374213" elapsed="0.000395"/>
-</if>
-<var name="${usuario}">{'nome': 'tester', 'email': 'a@a.com', 'password': 'pwd123', 'administrador': 'false', '_id': 'HeW8OiBgho3mmJqG'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.374127" elapsed="0.000504"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-06-16T23:15:11.375523" level="INFO">${id} = HeubDOwoEsh95N85</msg>
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.375060" elapsed="0.000493"/>
-</kw>
-<status status="PASS" start="2025-06-16T23:15:11.374847" elapsed="0.000757"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.374830" elapsed="0.000813"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano20@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'HeubDOwoEsh95N85'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.374747" elapsed="0.000918"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.376104" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.375887" elapsed="0.000336"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.375870" elapsed="0.000390"/>
-</if>
-<var name="${usuario}">{'nome': 'Caso de teste 7', 'email': 'Lexie_Abbott73@yahoo.com', 'password': '1234', 'administrador': 'true', '_id': 'HuE873kqGq4m8iwW'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.375786" elapsed="0.000497"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.376713" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.376503" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.376487" elapsed="0.000390"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario7655@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'INiNtqFWbeXGgUIh'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.376401" elapsed="0.000499"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.377409" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.377178" elapsed="0.000357"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.377160" elapsed="0.000413"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario3996@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'IT5mSZiPfDT3MSDY'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.377066" elapsed="0.000531"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.378051" elapsed="0.000523"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.377829" elapsed="0.000829"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.377812" elapsed="0.001255"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario9459@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'JG5i7sLWO7jh4Cyv'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.377724" elapsed="0.001384"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.380540" elapsed="0.000114"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.379953" elapsed="0.000773"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.379919" elapsed="0.000853"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7803', 'email': 'user7803@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'KKgC7sxb28qmteef'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.379530" elapsed="0.001269"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.381466" elapsed="0.000092"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.381068" elapsed="0.000632"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.381045" elapsed="0.000720"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario2511@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'KepAFcjXoSfSzGAE'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.380953" elapsed="0.000848"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.382387" elapsed="0.000077"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.382099" elapsed="0.000425"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.382079" elapsed="0.000484"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9357', 'email': 'user9357@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'KyuvnnGNrNzmycYo'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.381969" elapsed="0.000620"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.383067" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.382837" elapsed="0.000354"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.382819" elapsed="0.000408"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario9697@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'MBAa1zOUtlUf7cXp'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.382727" elapsed="0.000525"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.383695" elapsed="0.000069"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.383478" elapsed="0.000339"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.383461" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'ola', 'email': 'ola@gmail.com', 'password': 'ola', 'administrador': 'false', '_id': 'MJH5iNyZQeyCmqnW'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.383379" elapsed="0.000498"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.384309" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.384097" elapsed="0.000336"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.384077" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario6808@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'MRI5ivayXS365lTl'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.383995" elapsed="0.000499"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.385027" elapsed="0.000076"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.384780" elapsed="0.000376"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.384760" elapsed="0.000434"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9924', 'email': 'user9924@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'MTRG0ZxGi0TF6VzW'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.384656" elapsed="0.000563"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.385683" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.385447" elapsed="0.000354"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.385427" elapsed="0.000410"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7733', 'email': 'user7733@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'MgsZA1hmlrs4uElO'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.385345" elapsed="0.000515"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.386299" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.386082" elapsed="0.000337"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.386066" elapsed="0.000432"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario5345@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'Mi5Ak7D1WFnYc46P'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.385979" elapsed="0.000545"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.386972" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.386758" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.386742" elapsed="0.000387"/>
-</if>
-<var name="${usuario}">{'nome': 'TesteBre', 'email': 'admin@email.com', 'password': 'admin123', 'administrador': 'true', '_id': 'Mv0YWuZydQv6DGvt'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.386655" elapsed="0.000497"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.387590" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.387369" elapsed="0.000344"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.387350" elapsed="0.000400"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 1787', 'email': 'user1787@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'MyfxX3M1inBKrTdl'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.387268" elapsed="0.000506"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.388203" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.387989" elapsed="0.000330"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.387970" elapsed="0.000392"/>
-</if>
-<var name="${usuario}">{'nome': 'thais', 'email': 'thais@teste.com', 'password': 'teste123', 'administrador': 'false', '_id': 'NKMBTrsDVH7vSrHd'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.387892" elapsed="0.000493"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.389006" elapsed="0.000094"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.388631" elapsed="0.000533"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.388606" elapsed="0.000602"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario8363@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'O7NYLsUMp6bYZEIa'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.388504" elapsed="0.000732"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.389745" elapsed="0.000075"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.389498" elapsed="0.000373"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.389477" elapsed="0.000431"/>
-</if>
-<var name="${usuario}">{'nome': 'Caso de teste 6', 'email': 'Henderson_Hoppe3@hotmail.com', 'password': '12345678910', 'administrador': 'true', '_id': 'O9eEI16b5rNjv91a'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.389389" elapsed="0.000544"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.390383" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.390158" elapsed="0.000344"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.390140" elapsed="0.000397"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4996', 'email': 'user4996@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'Odx4Ps1ZXhjGotnB'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.390059" elapsed="0.000501"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.391011" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.390790" elapsed="0.000339"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.390770" elapsed="0.000395"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 8536', 'email': 'user8536@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'Oh4qixDuMyfCgMpF'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.390686" elapsed="0.000503"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.391633" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.391410" elapsed="0.000343"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.391392" elapsed="0.000400"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7172', 'email': 'user7172@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'OlM7hLASTtuMCyNE'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.391313" elapsed="0.000504"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.392291" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.392056" elapsed="0.000362"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.392033" elapsed="0.000421"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 03', 'email': 'fulano03@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'P1AKCt9w0wGytBru'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.391950" elapsed="0.000528"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.392939" elapsed="0.000069"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.392710" elapsed="0.000350"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.392692" elapsed="0.000405"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario3287@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'PbMiamCqf0ZMGrUp'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.392607" elapsed="0.000514"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.393694" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.393359" elapsed="0.000463"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.393341" elapsed="0.000518"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3794', 'email': 'user3794@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'PdM2wyYLXvCXMaN2'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.393258" elapsed="0.000627"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.394355" elapsed="0.000116"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.394123" elapsed="0.000463"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.394104" elapsed="0.000545"/>
-</if>
-<var name="${usuario}">{'nome': 'rob1 teste', 'email': 'robo.te@teste.com', 'password': 'pwd123', 'administrador': 'true', '_id': 'Pm2uqwHd2UJVSwoq'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.394022" elapsed="0.000660"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.396418" elapsed="0.000157"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.395963" elapsed="0.000688"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.395756" elapsed="0.000978"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano18@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'PpLk7haboOdhkHO3'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.395484" elapsed="0.001796"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.398232" elapsed="0.000114"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.397805" elapsed="0.000626"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.397769" elapsed="0.000711"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano15@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'QYTq51cjGsOpTOVN'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.397514" elapsed="0.000997"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.399111" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.398794" elapsed="0.000447"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.398774" elapsed="0.000504"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2905', 'email': 'user2905@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'QZXObiLWhCXCM3pf'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.398669" elapsed="0.000635"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.399781" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.399544" elapsed="0.000353"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.399525" elapsed="0.000407"/>
-</if>
-<var name="${usuario}">{'nome': 'aaa', 'email': 'aa@gmail.com', 'password': '123456', 'administrador': 'false', '_id': 'R2qovAKLWy4Fl9KN'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.399442" elapsed="0.000512"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.400385" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.400170" elapsed="0.000330"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.400152" elapsed="0.000386"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9897', 'email': 'user9897@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'R8d6CYkIytnrQVm5'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.400073" elapsed="0.000489"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.401000" elapsed="0.000077"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.400787" elapsed="0.000340"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.400769" elapsed="0.000392"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3395', 'email': 'user3395@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'RIumy7xlizppIuPf'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.400688" elapsed="0.000496"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.401611" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.401402" elapsed="0.000332"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.401384" elapsed="0.000385"/>
-</if>
-<var name="${usuario}">{'nome': 'tester', 'email': 'a2@a.com', 'password': '123fds', 'administrador': 'true', '_id': 'RWAfjXnGBtZg9JyM'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.401301" elapsed="0.000491"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.402233" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.402017" elapsed="0.000337"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.401996" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 8567', 'email': 'user8567@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'S3h6VrwsFTWdVMHg'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.401913" elapsed="0.000501"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.402871" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.402632" elapsed="0.000370"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.402614" elapsed="0.000428"/>
-</if>
-<var name="${usuario}">{'nome': 'Cassia Yumi', 'email': 'ci@gmail.com', 'password': 'pwe123', 'administrador': 'true', '_id': 'SmjLICjfr2ZQo5xv'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.402534" elapsed="0.000575"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.403584" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.403356" elapsed="0.000362"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.403332" elapsed="0.000433"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 6913', 'email': 'user6913@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'SxG9IVmZITO7ecNh'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.403246" elapsed="0.000545"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.404242" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.404022" elapsed="0.000345"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.404004" elapsed="0.000399"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4224', 'email': 'user4224@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'TRxC0OeWSJb7IPhE'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.403917" elapsed="0.000511"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.404944" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.404704" elapsed="0.000368"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.404682" elapsed="0.000429"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 6952', 'email': 'user6952@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'UE7uQBxXT8FGOkAS'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.404584" elapsed="0.000553"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.405595" elapsed="0.000069"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.405371" elapsed="0.000347"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.405351" elapsed="0.000405"/>
-</if>
-<var name="${usuario}">{'nome': 'tedsfdgasd', 'email': 'asdfasa@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'Wj8RwETcS3K5ctMP'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.405270" elapsed="0.000511"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.406237" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.406008" elapsed="0.000352"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.405988" elapsed="0.000408"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4064', 'email': 'user4064@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'WjoP1SM5eu0nTsFn'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.405907" elapsed="0.000514"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.406859" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.406647" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.406629" elapsed="0.000388"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7111', 'email': 'user7111@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'WtLRjgNzJptRGIK7'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.406541" elapsed="0.000500"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.407479" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.407262" elapsed="0.000340"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.407244" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario4301@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'Wuuic8sSbqlHDqgk'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.407158" elapsed="0.000504"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.408095" elapsed="0.000065"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.407879" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.407862" elapsed="0.000391"/>
-</if>
-<var name="${usuario}">{'nome': 'fulanodetal', 'email': 'fulano@silva.com', 'password': '12345', 'administrador': 'true', '_id': 'ZTHclhVeRFLLHhos'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.407783" elapsed="0.000495"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.408802" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.408530" elapsed="0.000398"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.408490" elapsed="0.000476"/>
-</if>
-<var name="${usuario}">{'nome': 'fulane31lson da silva', 'email': 'fadidigo@gago.com', 'password': 'pwrd123', 'administrador': 'true', '_id': 'ZgkUiUIiu6ciigmM'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.408395" elapsed="0.000598"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.409473" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.409246" elapsed="0.000347"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.409222" elapsed="0.000407"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario9067@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'Zglx4vTw6Kl6avsq'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.409132" elapsed="0.000522"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.410106" elapsed="0.000111"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.409885" elapsed="0.000389"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.409867" elapsed="0.000443"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 05', 'email': 'fulano05@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'aR40HnqAJ7fZLLCh'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.409786" elapsed="0.000548"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.410788" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.410564" elapsed="0.000343"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.410545" elapsed="0.000399"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7300', 'email': 'user7300@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'aoWI8bnwoBSf3EkH'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.410463" elapsed="0.000505"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.411430" elapsed="0.000516"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.411204" elapsed="0.000823"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.411179" elapsed="0.000895"/>
-</if>
-<var name="${usuario}">{'nome': 'test123', 'email': 'wehwjehj@gmail.com', 'password': '23232323', 'administrador': 'false', '_id': 'b8kRfB4D5Ivxqjdj'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.411098" elapsed="0.001009"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.414219" elapsed="0.000120"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.413496" elapsed="0.000938"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.413307" elapsed="0.001175"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7193', 'email': 'user7193@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'boaV0mrKm2xOeGWy'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.413023" elapsed="0.001522"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.415555" elapsed="0.000075"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.415191" elapsed="0.000496"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.415146" elapsed="0.000580"/>
-</if>
-<var name="${usuario}">{'nome': 'fulane1lson da silva', 'email': 'te2stando@huhu.com', 'password': 'pwrd123', 'administrador': 'true', '_id': 'buaTGK57iViB4dZY'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.414750" elapsed="0.001001"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.416242" elapsed="0.000293"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.416001" elapsed="0.000587"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.415982" elapsed="0.000643"/>
-</if>
-<var name="${usuario}">{'nome': 'fulane1lson da silva', 'email': 'te2sta2ndo@huhu.com', 'password': 'pwrd123', 'administrador': 'true', '_id': 'cEIqI4RRXNun3vrC'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.415897" elapsed="0.000751"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.417102" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.416878" elapsed="0.000341"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.416860" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'Joana', 'email': 'joana@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'cHyWljSaa3ejxlxY'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.416779" elapsed="0.000498"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.417713" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.417501" elapsed="0.000327"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.417483" elapsed="0.000380"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario8884@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'chiBEDbrm7Fv1V5z'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.417402" elapsed="0.000484"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.418327" elapsed="0.000073"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.418115" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.418097" elapsed="0.000388"/>
-</if>
-<var name="${usuario}">{'nome': 'asfsghdbs', 'email': 'gfjdshfasdhjkf@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'cmMIWKyBsI8ykrX1'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.418011" elapsed="0.000498"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.418940" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.418731" elapsed="0.000332"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.418714" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2701', 'email': 'user2701@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'czXS5kJxcc1VJCwO'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.418627" elapsed="0.000504"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.419558" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.419348" elapsed="0.000331"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.419326" elapsed="0.000389"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9062', 'email': 'user9062@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'd2pOaqntOlvcKeBZ'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.419248" elapsed="0.000532"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.420219" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.419997" elapsed="0.000339"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.419979" elapsed="0.000398"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 1071', 'email': 'user1071@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'd4cPSmkzn6U2ziRF'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.419899" elapsed="0.000501"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.420823" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.420611" elapsed="0.000328"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.420594" elapsed="0.000381"/>
-</if>
-<var name="${usuario}">{'nome': 'rob1 teste', 'email': 'labo.te@teste.com', 'password': 'pwd123', 'administrador': 'true', '_id': 'dFlc2kUsG4Qa9MRj'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.420515" elapsed="0.000487"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.421438" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.421221" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.421204" elapsed="0.000386"/>
-</if>
-<var name="${usuario}">{'nome': 'falaninhoqa222 da silva', 'email': 'te22stezinha@yahoo.com.br', 'password': 'pwd123', 'administrador': 'true', '_id': 'dWKtZa5lfrBdZ8qf'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.421124" elapsed="0.000488"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.422041" elapsed="0.000077"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.421829" elapsed="0.000340"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.421812" elapsed="0.000393"/>
-</if>
-<var name="${usuario}">{'nome': ' ghdsgdfsfdg', 'email': 'asdasdafs@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'e8gdzPiTxVFrIVU3'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.421732" elapsed="0.000496"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.422657" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.422445" elapsed="0.000327"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.422428" elapsed="0.000380"/>
-</if>
-<var name="${usuario}">{'nome': 'TESTE', 'email': 'teste123@qa.com', 'password': 'teste123', 'administrador': 'true', '_id': 'eQ6jn8eAe7b4MFWv'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.422349" elapsed="0.000482"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.423254" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.423046" elapsed="0.000329"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.423029" elapsed="0.000382"/>
-</if>
-<var name="${usuario}">{'nome': 'Clifton Rau', 'email': 'Niko.Walker@hotmail.com', 'password': 'teste', 'administrador': 'false', '_id': 'edCtTR5VECEEeAW0'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.422946" elapsed="0.000487"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.423901" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.423676" elapsed="0.000350"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.423653" elapsed="0.000410"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario4193@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'egOGbNI26AvgCw9D'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.423549" elapsed="0.000538"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.424561" elapsed="0.000093"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.424314" elapsed="0.000403"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.424296" elapsed="0.000464"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 06', 'email': 'fulano06@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'ewRhbFh7j5ibypaJ'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.424214" elapsed="0.000573"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.425268" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.425036" elapsed="0.000357"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.425015" elapsed="0.000423"/>
-</if>
-<var name="${usuario}">{'nome': 'robô teste', 'email': 'robo.teste@teste.com', 'password': 'pwd123', 'administrador': 'true', '_id': 'fJA1PzbzGTW3Zq4p'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.424925" elapsed="0.000537"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.425898" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.425686" elapsed="0.000329"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.425667" elapsed="0.000383"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 5474', 'email': 'user5474@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'gMtxaNyZiq6PNqNF'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.425587" elapsed="0.000488"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.426506" elapsed="0.000158"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.426293" elapsed="0.000430"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.426274" elapsed="0.000485"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario9170@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'ggTuL3ahPFnaOJes'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.426193" elapsed="0.000589"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.427216" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.427003" elapsed="0.000330"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.426985" elapsed="0.000384"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3019', 'email': 'user3019@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'hEXz61FLKkdV4Ktu'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.426904" elapsed="0.000488"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.427827" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.427614" elapsed="0.000337"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.427594" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3754', 'email': 'user3754@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'hFLkpTEy4iQKT9ls'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.427509" elapsed="0.000503"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.430212" elapsed="0.000083"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.429798" elapsed="0.000562"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.429751" elapsed="0.000653"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4747', 'email': 'user4747@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'hmcMthlyqYAs9q9n'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.428545" elapsed="0.001887"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.430946" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.430696" elapsed="0.000376"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.430677" elapsed="0.000433"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4343', 'email': 'user4343@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'iGFD2XLDI9MWV9D2'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.430585" elapsed="0.000549"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.431570" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.431356" elapsed="0.000332"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.431339" elapsed="0.000385"/>
-</if>
-<var name="${usuario}">{'nome': 'ana', 'email': 'ana@gmail.com', 'password': '123456', 'administrador': 'true', '_id': 'j3RBuPvRYOsOuJg9'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.431258" elapsed="0.000490"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.432175" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.431962" elapsed="0.000329"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.431946" elapsed="0.000383"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9822', 'email': 'user9822@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'kG6FYKs3uIZtcSnT'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.431867" elapsed="0.000485"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.432785" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.432571" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.432549" elapsed="0.000394"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 08', 'email': 'fulano08@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'kOY6bqceRCZhdU5R'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.432471" elapsed="0.000495"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.433394" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.433182" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.433165" elapsed="0.000391"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario7532@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'kibElL7xvNE822uM'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.433083" elapsed="0.000497"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.434010" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.433795" elapsed="0.000331"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.433778" elapsed="0.000384"/>
-</if>
-<var name="${usuario}">{'nome': 'Raique', 'email': 'raique1@qa.com.br', 'password': 'testando', 'administrador': 'true', '_id': 'lEuiMNegu5lK8v26'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.433700" elapsed="0.000485"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.434664" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.434404" elapsed="0.000407"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.434388" elapsed="0.000471"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7058', 'email': 'user7058@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'laaE38rP85mcBYtR'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.434309" elapsed="0.000625"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.435435" elapsed="0.000069"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.435191" elapsed="0.000364"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.435172" elapsed="0.000421"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 8782', 'email': 'user8782@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'ldbEVRnk7KsjqcVl'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.435078" elapsed="0.000539"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.436058" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.435842" elapsed="0.000334"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.435825" elapsed="0.000389"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano16@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'lyDDobY3MF5jGc3P'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.435737" elapsed="0.000499"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.436660" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.436448" elapsed="0.000338"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.436431" elapsed="0.000393"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 1763', 'email': 'user1763@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'mrO8c6ZrqkAhUoJO'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.436353" elapsed="0.000494"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.437296" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.437075" elapsed="0.000344"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.437053" elapsed="0.000403"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 09', 'email': 'fulano09@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'mvvTyIpoQ01nMbyh'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.436967" elapsed="0.000512"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.437948" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.437695" elapsed="0.000374"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.437674" elapsed="0.000432"/>
-</if>
-<var name="${usuario}">{'nome': 'fulanelson da silva', 'email': 'testando@huhu.com', 'password': 'pwrd123', 'administrador': 'true', '_id': 'oDJfJ5ENtGcx26HL'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.437595" elapsed="0.000534"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.438576" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.438348" elapsed="0.000347"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.438332" elapsed="0.000400"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3536', 'email': 'user3536@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'oLwbvsk3uFfKIaRL'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.438252" elapsed="0.000503"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.439352" elapsed="0.000075"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.438981" elapsed="0.000509"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.438964" elapsed="0.000566"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario3042@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'oSVVyHTe3ZYHsfWV'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.438879" elapsed="0.000675"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.440023" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.439792" elapsed="0.000356"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.439770" elapsed="0.000415"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7233', 'email': 'user7233@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'oYTMIzAThIZHt6ve'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.439688" elapsed="0.000520"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.440653" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.440431" elapsed="0.000345"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.440411" elapsed="0.000402"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 01', 'email': 'fulano01@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'p6aLbfMjVxB1amhS'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.440330" elapsed="0.000507"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.441309" elapsed="0.000084"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.441054" elapsed="0.000390"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.441038" elapsed="0.000443"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario3800@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'qHN5MJOv8tWi5I5j'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.440957" elapsed="0.000549"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.441948" elapsed="0.000115"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.441730" elapsed="0.000385"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.441714" elapsed="0.000439"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano13@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'qK73tjQbPCIpw4cc'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.441629" elapsed="0.000547"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.442627" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.442400" elapsed="0.000355"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.442384" elapsed="0.000409"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario2610@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'qT7HYJU7dHhHmDJ3'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.442296" elapsed="0.000520"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.443264" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.443050" elapsed="0.000337"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.443027" elapsed="0.000397"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 6928', 'email': 'user6928@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'rBpY9q4t849uUilg'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.442943" elapsed="0.000504"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.443884" elapsed="0.000071"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.443661" elapsed="0.000345"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.443644" elapsed="0.000404"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2825', 'email': 'user2825@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'rPD81oNo7Xjueqdd'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.443564" elapsed="0.000507"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.446539" elapsed="0.000151"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.444285" elapsed="0.002580"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.444269" elapsed="0.002665"/>
-</if>
-<var name="${usuario}">{'nome': 'bobjon', 'email': 'bobjon@gmail.com', 'password': '123', 'administrador': 'false', '_id': 'rr08jrpRJg9ChnFC'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.444189" elapsed="0.002779"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.447793" elapsed="0.000096"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.447374" elapsed="0.000578"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.447349" elapsed="0.000648"/>
-</if>
-<var name="${usuario}">{'nome': 'robô teste', 'email': 'robo.t2este@test2e.com', 'password': 'pwd123', 'administrador': 'true', '_id': 'sAcA4HQC4y14Uv11'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.447140" elapsed="0.000885"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.448537" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.448297" elapsed="0.000363"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.448276" elapsed="0.000422"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3034', 'email': 'user3034@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'stjHqdeMyYn2TQR1'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.448182" elapsed="0.000538"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.449167" elapsed="0.000069"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.448939" elapsed="0.000348"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.448923" elapsed="0.000401"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano 02', 'email': 'fulano02@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'tf0dhoXoZPbjT6u4'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.448842" elapsed="0.000505"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.449796" elapsed="0.000070"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.449581" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.449563" elapsed="0.000389"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario9701@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'tnk7Xf5g4LRjOzwP'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.449477" elapsed="0.000498"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.450418" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.450203" elapsed="0.000338"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.450186" elapsed="0.000391"/>
-</if>
-<var name="${usuario}">{'nome': 'Fulano teste', 'email': 'fulano@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'tuOkZwLN3uhytO7P'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.450101" elapsed="0.000502"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.451054" elapsed="0.000080"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.450818" elapsed="0.000368"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.450802" elapsed="0.000421"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3410', 'email': 'user3410@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'uXm0zCxm42TV5yY1'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.450722" elapsed="0.000571"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.451748" elapsed="0.000069"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.451525" elapsed="0.000342"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.451508" elapsed="0.000395"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 2190', 'email': 'user2190@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'ueL8aQyMY0Z9Qcvx'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.451424" elapsed="0.000502"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.452363" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.452147" elapsed="0.000333"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.452130" elapsed="0.000387"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 4260', 'email': 'user4260@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'wVSgCUakYrpqVByF'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.452045" elapsed="0.000495"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.452987" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.452770" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.452752" elapsed="0.000389"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario5961@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'wbqEgiIuKVDk7Ljr'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.452666" elapsed="0.000498"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.453610" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.453392" elapsed="0.000335"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.453371" elapsed="0.000392"/>
-</if>
-<var name="${usuario}">{'nome': 'raique', 'email': 'raique@gmail.com', 'password': 'qatest321', 'administrador': 'true', '_id': 'wokuEfIMf8UtW45z'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.453291" elapsed="0.000495"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.454239" elapsed="0.000068"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.454013" elapsed="0.000344"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.453995" elapsed="0.000398"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3198', 'email': 'user3198@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'x6OzAmjUiUwt2FJw'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.453914" elapsed="0.000502"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.454910" elapsed="0.000075"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.454681" elapsed="0.000361"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.454663" elapsed="0.000425"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 3560', 'email': 'user3560@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'xHiJexeISfuB6wOy'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.454564" elapsed="0.000548"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.455561" elapsed="0.000085"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.455342" elapsed="0.000359"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.455325" elapsed="0.000412"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario2480@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'xLcIaCXyeTLiPJFH'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.455237" elapsed="0.000522"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.456215" elapsed="0.000072"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.455992" elapsed="0.000346"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.455974" elapsed="0.000400"/>
-</if>
-<var name="${usuario}">{'nome': 'Usuário Teste', 'email': 'usuario5994@teste.com', 'password': 'Test1234!', 'administrador': 'false', '_id': 'xeN4dn4dNilXJfaI'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.455882" elapsed="0.000515"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.456872" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.456628" elapsed="0.000370"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.456607" elapsed="0.000427"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9880', 'email': 'user9880@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'xy2CSSRjXz0Uy0sv'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.456523" elapsed="0.000534"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.457496" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.457277" elapsed="0.000339"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.457256" elapsed="0.000397"/>
-</if>
-<var name="${usuario}">{'nome': 'izadora', 'email': 'izadoradm@gmail.com', 'password': '123456', 'administrador': 'false', '_id': 'xzeD9FTW1RICOlPr'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.457177" elapsed="0.000500"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.458107" elapsed="0.000110"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.457890" elapsed="0.000378"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.457874" elapsed="0.000436"/>
-</if>
-<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano19@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'y0PxjP4aeua0ro8y'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.457795" elapsed="0.000538"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.458763" elapsed="0.000066"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.458546" elapsed="0.000333"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.458530" elapsed="0.000385"/>
-</if>
-<var name="${usuario}">{'nome': 'teste', 'email': 'test@x.com', 'password': 'pwd123', 'administrador': 'true', '_id': 'yMVbAde4xqlmqHr2'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.458451" elapsed="0.000492"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.459377" elapsed="0.000067"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.459156" elapsed="0.000338"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.459138" elapsed="0.000392"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 7045', 'email': 'user7045@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'yjwBBcyZNJoGQGoK'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.459059" elapsed="0.000493"/>
-</iter>
-<iter>
-<if>
-<branch type="IF" condition="$usuario[&quot;email&quot;] == $email_usuario">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${id}</var>
-<arg>${usuario["_id"]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-06-16T23:15:11.460818" elapsed="0.000081"/>
-</kw>
-<status status="NOT RUN" start="2025-06-16T23:15:11.459777" elapsed="0.001183"/>
-</branch>
-<status status="PASS" start="2025-06-16T23:15:11.459760" elapsed="0.001247"/>
-</if>
-<var name="${usuario}">{'nome': 'Robot Teste 9148', 'email': 'user9148@teste.com', 'password': '123456', 'administrador': 'true', '_id': 'ymyzdgz2I5aX33Zl'}</var>
-<status status="PASS" start="2025-06-16T23:15:11.459675" elapsed="0.001359"/>
+<var name="${usuario}">{'nome': 'fulano', 'email': 'fulano@teste.com', 'password': 'senha123', 'administrador': 'true', '_id': 'o4Z9DNShQcILVsCC'}</var>
+<status status="PASS" start="2025-06-17T09:32:30.482446" elapsed="0.000495"/>
 </iter>
 <var>${usuario}</var>
 <value>@{usuarios}</value>
-<status status="PASS" start="2025-06-16T23:15:11.345125" elapsed="0.115959"/>
+<status status="PASS" start="2025-06-17T09:32:30.480061" elapsed="0.002920"/>
 </for>
 <kw name="DELETE On Session" owner="RequestsLibrary">
-<msg time="2025-06-16T23:15:11.625394" level="INFO">DELETE Request : url=https://compassuol.serverest.dev/usuarios/HeubDOwoEsh95N85 
- path_url=/usuarios/HeubDOwoEsh95N85 
+<msg time="2025-06-17T09:32:30.654465" level="INFO">DELETE Request : url=https://compassuol.serverest.dev/usuarios/None 
+ path_url=/usuarios/None 
  headers={'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg time="2025-06-16T23:15:11.625505" level="INFO">DELETE Response : url=https://compassuol.serverest.dev/usuarios/HeubDOwoEsh95N85 
+<msg time="2025-06-17T09:32:30.654557" level="INFO">DELETE Response : url=https://compassuol.serverest.dev/usuarios/None 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '19b6e4723eb446957ef55e0755fcf32a', 'date': 'Tue, 17 Jun 2025 02:15:11 GMT', 'server': 'Google Frontend', 'Content-Length': '51'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': 'a0d340a19ece2772bdc1e93a43ab82e4', 'date': 'Tue, 17 Jun 2025 12:32:30 GMT', 'server': 'Google Frontend', 'Content-Length': '46'} 
  body={
-    "message": "Registro excluído com sucesso"
+    "message": "Nenhum registro excluído"
 } 
  </msg>
-<msg time="2025-06-16T23:15:11.625589" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-06-17T09:32:30.654623" level="INFO">C:\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'compassuol.serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
 <arg>restful-serverest</arg>
 <arg>/usuarios/${id}</arg>
 <arg>expected_status=${STATUS_REQ}</arg>
 <doc>Sends a DELETE request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.461212" elapsed="0.164609"/>
+<status status="PASS" start="2025-06-17T09:32:30.483094" elapsed="0.171739"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-17T09:32:30.655978" level="INFO">${user_id} = None</msg>
+<arg>${user_id}</arg>
+<arg>${id}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-17T09:32:30.655168" elapsed="0.000885"/>
 </kw>
 <arg>${user['email']}</arg>
-<status status="PASS" start="2025-06-16T23:15:10.815376" elapsed="0.810594"/>
+<status status="PASS" start="2025-06-17T09:32:30.104633" elapsed="0.551540"/>
 </kw>
 <kw name="Enviar formulário de inscrição" owner="usuarios_keywords">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-16T23:15:11.627467" level="INFO">Fills the text 'fulano' in the given field.</msg>
+<msg time="2025-06-17T09:32:30.657437" level="INFO">Fills the text 'teste' in the given field.</msg>
 <arg>css=input[name=nome]</arg>
 <arg>${user}[name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.626847" elapsed="0.027392"/>
+<status status="PASS" start="2025-06-17T09:32:30.656955" elapsed="0.024009"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-16T23:15:11.655275" level="INFO">Fills the text 'fulano20@teste.com' in the given field.</msg>
+<msg time="2025-06-17T09:32:30.682116" level="INFO">Fills the text 'teste@teste.com' in the given field.</msg>
 <arg>css=input[name=email]</arg>
 <arg>${user}[email]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.654495" elapsed="0.019838"/>
+<status status="PASS" start="2025-06-17T09:32:30.681513" elapsed="0.018364"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-06-16T23:15:11.675626" level="INFO">Fills the text 'senha123' in the given field.</msg>
+<msg time="2025-06-17T09:32:30.700963" level="INFO">Fills the text 'senha123' in the given field.</msg>
 <arg>css=input[name=password]</arg>
 <arg>${user}[password]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.674912" elapsed="0.014320"/>
+<status status="PASS" start="2025-06-17T09:32:30.700127" elapsed="0.014731"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-06-16T23:15:11.689930" level="INFO">Clicks the element 'css=input[name=administrador]'.</msg>
+<msg time="2025-06-17T09:32:30.715836" level="INFO">Clicks the element 'css=input[name=administrador]'.</msg>
 <arg>css=input[name=administrador]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.689428" elapsed="0.052473"/>
+<status status="PASS" start="2025-06-17T09:32:30.715062" elapsed="0.040594"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-06-16T23:15:11.742593" level="INFO">Clicks the element 'css=button[type=submit] &gt;&gt; text=Cadastrar'.</msg>
+<msg time="2025-06-17T09:32:30.756360" level="INFO">Clicks the element 'css=button[type=submit] &gt;&gt; text=Cadastrar'.</msg>
 <arg>css=button[type=submit] &gt;&gt; text=Cadastrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.742104" elapsed="0.048118"/>
+<status status="PASS" start="2025-06-17T09:32:30.755859" elapsed="0.048578"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-16T23:15:16.791205" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-06-17T09:32:35.805269" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-16T23:15:11.790409" elapsed="5.000922"/>
+<status status="PASS" start="2025-06-17T09:32:30.804624" elapsed="5.000756"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2025-06-16T23:15:11.626341" elapsed="5.165107"/>
+<status status="PASS" start="2025-06-17T09:32:30.656573" elapsed="5.148914"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
-<msg time="2025-06-16T23:15:16.923010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-17T09:32:35.935211" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-06-16T23:15:16.791886" elapsed="0.131266"/>
+<status status="PASS" start="2025-06-17T09:32:35.806163" elapsed="0.129193"/>
 </kw>
-<msg time="2025-06-16T23:15:16.936780" level="INFO">Switching context to context=abd4d574-205b-4f1a-888f-9f3b7b020c51 in CURRENT</msg>
-<msg time="2025-06-16T23:15:16.944979" level="INFO">Successfully changed active context: context=abd4d574-205b-4f1a-888f-9f3b7b020c51</msg>
-<msg time="2025-06-16T23:15:17.019669" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-06-16T23:15:06.129726" elapsed="10.793639"/>
+<msg time="2025-06-17T09:32:35.951279" level="INFO">Switching context to context=73ca2eb1-b501-4839-8634-511cc035e001 in CURRENT</msg>
+<msg time="2025-06-17T09:32:35.959196" level="INFO">Successfully changed active context: context=73ca2eb1-b501-4839-8634-511cc035e001</msg>
+<msg time="2025-06-17T09:32:36.033959" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-06-17T09:32:25.180393" elapsed="10.755354"/>
 </test>
 <doc>Cenarios de testes de cadastro de usuarios</doc>
-<status status="PASS" start="2025-06-16T23:15:05.136560" elapsed="11.888754"/>
+<status status="PASS" start="2025-06-17T09:32:24.300401" elapsed="11.736304"/>
 </suite>
-<status status="PASS" start="2025-06-16T23:15:05.097887" elapsed="11.933923"/>
+<status status="PASS" start="2025-06-17T09:32:24.247962" elapsed="11.794415"/>
 </suite>
 <statistics>
 <total>

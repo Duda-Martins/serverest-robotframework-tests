@@ -40,4 +40,4 @@ Excluir usuário - API
     END
 
     DELETE On Session    restful-serverest    /usuarios/${id}    expected_status=${STATUS_REQ}
-
+    Set Suite Variable    ${user_id}    ${id}  #armazenar o id 

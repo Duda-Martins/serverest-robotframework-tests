@@ -9,8 +9,8 @@ Test Teardown    Take Screenshot
 Cenario: Criar um novo usuário com administrador valido
     
     ${user}        Create Dictionary
-    ...    name=fulano
-    ...    email=fulano20@teste.com
+    ...    name=teste
+    ...    email=teste@teste.com
     ...    password=senha123
     ...    administrador=true
     
@@ -19,6 +19,11 @@ Cenario: Criar um novo usuário com administrador valido
     Excluir usuário - API    ${user['email']}
 
     Enviar formulário de inscrição    ${user}
+
+
+   
+
+
 
     
     
