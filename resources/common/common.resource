@@ -15,7 +15,7 @@ Sessão - API
     Create Session    alias=restful-serverest    url=${API_URL}
 
 Excluir usuário - API
-    [Arguments]    ${email-usuario}
+    [Arguments]    ${email_usuario}
 
     Sessão - API
 
@@ -27,11 +27,12 @@ Excluir usuário - API
     ${json}    Set Variable    ${response.json()}
 
     ${usuarios}=      Get From Dictionary    ${json}    usuarios
+    
+    ${id}=    Set Variable    None
 
     FOR    ${usuario}    IN    @{usuarios}
-        ${email}    Get From Dictionary    ${usuario}    email
-        IF    '''${email}''' == '''${email-usuario}'''
-            ${id}    Set Variable    ${usuario["_id"]}
+        IF    $usuario["email"] == $email_usuario
+            ${id}=    Set Variable    ${usuario["_id"]}
         END
     END
 
@@ -39,6 +40,8 @@ Excluir usuário - API
     ...          alias=restful-serverest
     ...          url=/usuarios/${id}
     ...          expected_status=${STATUS_REQ}
+
+    Set Suite Variable    ${user_id}    ${id}
 
 Criar usuário - API
     Sessão - API
