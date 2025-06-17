@@ -13,6 +13,8 @@ Resource    ../login_keywords.resource
 Resource    ../atualizar_produto.resource
 Resource    ../excuir_produto.resource
 Resource    ../login.resource
+Resource    ../produtos_keywords.resource
+Resource    ../login_keywords.resource
 
 *** Variables ***
 ${BASE_URL}    https://compassuolfront.serverest.dev
@@ -39,20 +41,24 @@ Logar
 Criar Sessao
     New Browser    browser=chromium    headless=False
     New Page       ${BASE_URL}
-
     Create Session    alias=restful-serverest    url=${API_URL}
 
-    
 Excluir usuário - API
-    
+   
     [Arguments]    ${email_usuario}
-
+ 
     ${response}=    GET On Session    restful-serverest    /usuarios    expected_status=${STATUS_REQ}
     ${usuarios}=    Get From Dictionary    ${response.json()}    usuarios
-
+ 
     ${id}=    Set Variable    None
-
-
+    FOR    ${usuario}    IN    @{usuarios}
+        IF    $usuario["email"] == $email_usuario
+            ${id}=    Set Variable    ${usuario["_id"]}
+        END
+    END
+ 
+    RequestsLibrary.DELETE On Session    restful-serverest    /usuarios/${id}    expected_status=${STATUS_REQ}
+    Set Suite Variable    ${user_id}    ${id}  #armazenar o id
 
  DELETE On Session
     ...          alias=restful-serverest
@@ -187,3 +193,6 @@ Criar produto - API
     Set Test Variable    ${RESPOSTA}    ${resposta.json()}
     Log    ${RESPOSTA}
     Log to Console    ${RESPOSTA}
+
+Silenciar InsecureRequestWarning
+    Evaluate    __import__('urllib3').disable_warnings(__import__('urllib3').exceptions.InsecureRequestWarning)
