@@ -4,7 +4,7 @@ Resource    ../resources/common/common.resource
 
 *** Keywords ***
 Listar produtos e editar o produto criado
-    Go To    ${URL_BASE}/admin/listarprodutos
+    Go To    ${BASE_URL}/admin/listarprodutos
 
     Wait For Elements State    css=table tbody td >> text=${data}[produto][nome]
     ...    visible

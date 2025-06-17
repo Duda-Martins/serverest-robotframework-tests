@@ -1,6 +1,8 @@
 *** Settings ***
-Library    SeleniumLibrary
-Resource    ../resources/listar_usuarios_keyword.robot
+Resource    ../resources/common/common.resource
+
+Test Setup    Criar Sessao
+Test Teardown    Take Screenshot
 
 *** Variables ***
 ${BASE_URL}              https://compassuolfront.serverest.dev
@@ -11,6 +13,8 @@ ${SENHA_ADMIN}      admin123
 
 *** Test Cases ***
 Cenário de teste 04 - Validar a lista de usuários no Serverest para usuário adm
-    Acessar o site serverest
-    Logar com usuário administrador válido
+    ${user}=    Criar usuario como administrador    #Thais
+    Ir para a página de inscrição                   #Thais
+    Excluir usuário - API    ${user['email']}       #Maria
+    Enviar formulário de inscrição    ${user}       #Thais
     Acessar página de lista de usuários

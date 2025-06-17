@@ -1,25 +1,15 @@
 *** Settings ***
-Library    SeleniumLibrary
-Resource    ../tests/alterar_usuario_keyword.robot
+Resource    ../resources/common/common.resource
 
-*** Variables ***
-${BASE_URL}         https://compassuolfront.serverest.dev
-${BROWSER}          Chrome
-${NOME_ATUAL}       TesteBre
-${EMAIL_ADMIN}      qabre@admin.com
-${SENHA_ADMIN}      admin123
-${NOVO_NOME}        Nome Editado
-${NOVO_EMAIL}       novo@email.com
-${NOVA_SENHA}       123456
+Test Setup    Criar Sessao
+Test Teardown    Take Screenshot
 
 *** Test Cases ***
 Cenário de teste 03 - Validar o campo de alteração/edição de um usuário válido
-    Acessar o site serverest
-    Logar com usuário administrador válido
+    ${user}=    Criar usuario como administrador    #Thais
+    Ir para a página de inscrição                   #Thais
+    Excluir usuário - API    ${user['email']}       #Maria
+    Enviar formulário de inscrição    ${user}       #Thais
     Acessar página de usuários
-    Clicar no botão editar do primeiro usuário
-    Verificar o campo de preenchimento dos novos dados do usuário
-
-
-    
-    
+    # Clicar no botão editar do primeiro usuário
+    # Verificar o campo de preenchimento dos novos dados do usuário

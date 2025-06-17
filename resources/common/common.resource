@@ -1,5 +1,4 @@
 *** Settings ***
-
 Documentation    Keywords e imports comuns para todos os testes
 
 Library    Browser
@@ -9,12 +8,12 @@ Library    String
 Library    JSONLibrary
 
 Resource    ../usuarios_keywords.resource
+Resource    ../listar_usuarios_keyword.resource
+Resource    ../alterar_usuario_keyword.resource
 Resource    ../login_keywords.resource
+Resource    ../produtos_keywords.resource
 Resource    ../atualizar_produto.resource
 Resource    ../excuir_produto.resource
-Resource    ../login.resource
-Resource    ../produtos_keywords.resource
-Resource    ../login_keywords.resource
 
 *** Variables ***
 ${BASE_URL}    https://compassuolfront.serverest.dev
@@ -22,21 +21,26 @@ ${API_URL}      https://compassuol.serverest.dev
 ${STATUS_REQ}    any
 ${BROWSER}    chromium
 
+${NOME_ATUAL}       TesteBre
+${EMAIL_ADMIN}      qabre@admin.com
+${SENHA_ADMIN}      admin123
+${NOVO_NOME}        Nome Editado
+${NOVO_EMAIL}       novo@email.com
+${NOVA_SENHA}       123456
 
 *** Keywords ***
 
 Abrir página
     New Browser    browser=${BROWSER}    headless=False
-    New Page    ${URL_BASE}
+    New Page    ${BASE_URL}
 
 Logar
     ${data}    Load Json From File
     ...    ${EXECDIR}/resources/fixtures/api.json
     ...    encoding=utf-8
 
-    Enviar formulário de login   ${data}[usuario]
+    Enviar formulário de login    ${data}[usuario]
     O usuário deve estar logado   ${data}[usuario][nome]
-
 
 Criar Sessao
     New Browser    browser=chromium    headless=False
@@ -57,10 +61,10 @@ Excluir usuário - API
         END
     END
  
-    RequestsLibrary.DELETE On Session    restful-serverest    /usuarios/${id}    expected_status=${STATUS_REQ}
-    Set Suite Variable    ${user_id}    ${id}  #armazenar o id
+    # RequestsLibrary.DELETE On Session    restful-serverest    /usuarios/${id}    expected_status=${STATUS_REQ}
+    # Set Suite Variable    ${user_id}    ${id}  #armazenar o id
 
- DELETE On Session
+    DELETE On Session
     ...          alias=restful-serverest
     ...          url=/usuarios/${id}
     ...          expected_status=${STATUS_REQ}
@@ -68,7 +72,7 @@ Excluir usuário - API
     Set Suite Variable    ${user_id}    ${id}
 
 Criar usuário - API
-    Sessão - API
+    Criar Sessao
 
     ${data}    Load Json From File
     ...    ${EXECDIR}/resources/fixtures/api.json
@@ -87,7 +91,7 @@ Criar usuário - API
     Log to Console    ${RESPOSTA}
 
 Login usuário - API
-    Sessão - API
+    Criar Sessao
 
     Criar usuário - API
 
@@ -139,7 +143,7 @@ Gerar token usuario - API
 Excluir produto - API
     [Arguments]    ${nome-produto}
 
-    Sessão - API
+    Criar Sessao
 
     ${resposta}    GET On Session
         ...          alias=restful-serverest
@@ -169,7 +173,7 @@ Excluir produto - API
 
 Criar produto - API
 
-    Sessão - API
+    Criar Sessao
 
     Login usuário - API
 

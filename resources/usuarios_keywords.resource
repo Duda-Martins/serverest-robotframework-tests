@@ -1,12 +1,10 @@
 *** Settings ***
-Documentation    Keywords para testes  das pagina de cadastro 
-Library     Browser
+Documentation    Keywords para testes  das pagina de cadastro
 Resource    ./common/common.resource        
 
 *** Keywords ***
 
 Criar usuario como administrador 
-
     ${user}        Create Dictionary
     ...    name=teste
     ...    email=teste@teste.com
@@ -14,20 +12,15 @@ Criar usuario como administrador
     ...    administrador=true
     RETURN    ${user}
 
-
 Ir para a página de inscrição
-
     Go To    ${BASE_URL}/cadastrarusuarios
 
     #checkpoint
     Wait For Elements State    css=.font-robot    visible    5      
     Get Text                   css=.font-robot    equal      Cadastro
 
-
-
 Enviar formulário de inscrição 
    [Arguments]    ${user}
-
 
     Fill Text    css=input[name=nome]     ${user}[name]    
     Fill Text    css=input[name=email]      ${user}[email]
