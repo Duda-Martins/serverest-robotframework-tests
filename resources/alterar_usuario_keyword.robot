@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Acessar o site serverest
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${BASE_URL}    ${BROWSER}
     Maximize Browser Window
     Wait Until Page Contains Element    xpath=//h1[text()="Login"]
 Logar com usuário administrador válido

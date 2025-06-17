@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Resource    ../tests/alterar_usuario_keyword.robot
 
 *** Variables ***
-${URL}              https://compassuolfront.serverest.dev
+${BASE_URL}              https://compassuolfront.serverest.dev
 ${BROWSER}          Chrome
 ${NOME_ATUAL}       TesteBre
 ${EMAIL_ADMIN}      qabre@admin.com
