@@ -5,6 +5,14 @@ Resource    ./common/common.resource
 
 *** Keywords ***
 
+Criar usuario como administrador 
+    ${user}        Create Dictionary
+    ...    name=teste
+    ...    email=teste@teste.com
+    ...    password=senha123
+    ...    administrador=true
+    [Return]    ${user}
+
 Ir para a página de inscrição
 
     Go To    ${BASE_URL}/cadastrarusuarios

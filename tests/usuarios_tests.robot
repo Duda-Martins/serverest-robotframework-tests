@@ -7,12 +7,8 @@ Test Teardown    Take Screenshot
 
 *** Test Cases ***
 Cenario: Criar um novo usuário com administrador valido
-    
-    ${user}        Create Dictionary
-    ...    name=teste
-    ...    email=teste@teste.com
-    ...    password=senha123
-    ...    administrador=true
+
+    ${user}=    Criar usuario como administrador 
     
     Ir para a página de inscrição
 
