@@ -25,6 +25,8 @@ O usuário deve estar logado
    @{nome_inicial}    Split String    ${name}
    ${element}    Set Variable    css=h1  
 
+   Sleep    5
+
    Wait For Elements State    ${element}   
    ...    visible     5
 
