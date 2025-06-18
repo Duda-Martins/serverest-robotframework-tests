@@ -13,3 +13,4 @@ Atualizar produto valido - Maria Eduarda
     Listar produtos e editar o produto criado
     # Validar se aparece o formulário de edição
     Excluir produto - API    ${data}[produto][nome]
+    Excluir usuário - API    ${data}[usuario][email]

@@ -12,3 +12,4 @@ Excluir produto valido - Maria Eduarda
     Logar
     Listar produtos e excluir o produto criado
     Validar se o produto some
+    Excluir usuário - API    ${data}[usuario][email]
