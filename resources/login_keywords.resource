@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    Keywords para testes  das pagina de login
+Library     Browser
 Resource    ./common/common.resource        
 
 *** Keywords ***
