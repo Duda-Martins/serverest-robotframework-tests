@@ -1,9 +1,8 @@
 *** Settings ***
-Documentation    Keywords para testes  das pagina de login
-Resource    ./common/common.resource        
+Documentation    Keywords da Página de Login
+Resource         ./common/common.resource      
 
 *** Keywords ***
-
 Criar login valido 
    ${user}    Create Dictionary
     ...    name=teste

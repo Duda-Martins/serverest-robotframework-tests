@@ -1,7 +1,6 @@
 *** Settings ***
-Documentation    Keywords do Endpoint Produtos
-Library    Browser
-Library    Collections
+Documentation    Keywords de Produto
+Resource         ./common/common.resource  
 
 *** Keywords ***
 Cadastrar um produto valido

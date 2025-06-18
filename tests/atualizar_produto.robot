@@ -1,12 +1,11 @@
 *** Settings ***
-Documentation    Testes de edição de produtos.
-Resource    ../resources/common/common.resource
+Documentation    Testes de Edição de Produto
+Resource         ../resources/common/common.resource
 
-Test Teardown     Take Screenshot
+Test Teardown    Take Screenshot
 Suite Setup      Silenciar InsecureRequestWarning
 
 *** Test Cases ***
-
 Atualizar produto valido - Maria Eduarda
     Criar produto - API
     Abrir página

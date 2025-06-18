@@ -1,35 +1,34 @@
 *** Settings ***
-Documentation    Keywords e imports comuns para todos os testes
+Documentation    Keywords e Imports Comuns para Todos os Testes
 
-Library    Browser
-Library    RequestsLibrary
-Library    Collections
-Library    String
-Library    JSONLibrary
+Library          Browser
+Library          RequestsLibrary
+Library          Collections
+Library          String
+Library          JSONLibrary
 
-Resource    ../usuarios_keywords.resource
-Resource    ../listar_usuarios_keyword.resource
-Resource    ../alterar_usuario_keyword.resource
-Resource    ../login_keywords.resource
-Resource    ../produtos_keywords.resource
-Resource    ../atualizar_produto.resource
-Resource    ../excuir_produto.resource
+Resource         ../usuarios_keywords.resource
+Resource         ../listar_usuarios_keyword.resource
+Resource         ../alterar_usuario_keyword.resource
+Resource         ../login_keywords.resource
+Resource         ../produtos_keywords.resource
+Resource         ../atualizar_produto.resource
+Resource         ../excuir_produto.resource
 
 *** Variables ***
-${BASE_URL}    https://compassuolfront.serverest.dev
-${API_URL}      https://compassuol.serverest.dev
-${STATUS_REQ}    any
-${BROWSER}    chromium
+${BASE_URL}       https://compassuolfront.serverest.dev
+${API_URL}        https://compassuol.serverest.dev
+${STATUS_REQ}     any
+${BROWSER}        chromium
 
-${NOME_ATUAL}       TesteBre
-${EMAIL_ADMIN}      qabre@admin.com
-${SENHA_ADMIN}      admin123
-${NOVO_NOME}        Nome Editado
-${NOVO_EMAIL}       novo@email.com
-${NOVA_SENHA}       123456
+${NOME_ATUAL}     TesteBre
+${EMAIL_ADMIN}    qabre@admin.com
+${SENHA_ADMIN}    admin123
+${NOVO_NOME}      Nome Editado
+${NOVO_EMAIL}     novo@email.com
+${NOVA_SENHA}     123456
 
 *** Keywords ***
-
 Abrir página
     New Browser    browser=${BROWSER}    headless=False
     New Page    ${BASE_URL}

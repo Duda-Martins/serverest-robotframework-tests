@@ -1,9 +1,8 @@
 *** Settings ***
-Documentation    Keywords para testes  das pagina de cadastro
-Resource    ./common/common.resource        
+Documentation    Keywords das Páginas de Cadastro
+Resource         ./common/common.resource  
 
 *** Keywords ***
-
 Criar usuario como administrador 
     ${user}        Create Dictionary
     ...    name=teste

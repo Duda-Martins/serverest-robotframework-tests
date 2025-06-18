@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Testes do Endpoint Produtos
+Documentation    Testes de Cadastro de Produto e Listagem 
 Resource         ../resources/common/common.resource
 
 Test Setup       Criar Sessao

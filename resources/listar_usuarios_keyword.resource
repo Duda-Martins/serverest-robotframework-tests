@@ -1,6 +1,6 @@
 *** Settings ***
-Resource       common/common.resource
-# Library    SeleniumLibrary
+Documentation    Keywords de Acesso as Páginas
+Resource         ./common/common.resource  
 
 *** Keywords ***
 Acessar o site serverest

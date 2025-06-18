@@ -1,6 +1,6 @@
 *** Settings ***
-Documentation    Cenarios de testes de cadastro de usuarios 
-Resource    ../resources/common/common.resource
+Documentation    Testes de Cadastro de Usuário 
+Resource         ../resources/common/common.resource
 
 Test Setup       Criar Sessao
 Test Teardown    Take Screenshot

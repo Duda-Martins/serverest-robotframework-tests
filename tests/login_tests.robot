@@ -1,13 +1,12 @@
 *** Settings ***
-Documentation    Cenarios autenticaçao  de cadastro de usuarios 
-Resource    ../resources/common/common.resource
+Documentation    Testes de Login Válido
+Resource         ../resources/common/common.resource
 
 Test Setup       Criar Sessao
 Test Teardown    Take Screenshot
 Suite Setup      Silenciar InsecureRequestWarning
 
 *** Test Cases ***
-
 Cenario: Login com credenciais valido
 
     ${user}=    Criar login valido

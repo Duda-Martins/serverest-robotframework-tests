@@ -1,12 +1,13 @@
 *** Settings ***
-Resource    ../resources/common/common.resource
+Documentation    Testes de Listagem de Usuários
+Resource         ../resources/common/common.resource
 
-Test Setup    Criar Sessao
+Test Setup       Criar Sessao
 Test Teardown    Take Screenshot
 Suite Setup      Silenciar InsecureRequestWarning
 
 *** Variables ***
-${BASE_URL}              https://compassuolfront.serverest.dev
+${BASE_URL}         https://compassuolfront.serverest.dev
 ${BROWSER}          chromium
 ${NOME_ATUAL}       TesteBre
 ${EMAIL_ADMIN}      qabre@admin.com

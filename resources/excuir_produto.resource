@@ -1,6 +1,6 @@
 *** Settings ***
-Documentation    Testes de exclusão de produtos.
-Resource    ../resources/common/common.resource
+Documentation    Keywords de Exclusão de Produtos
+Resource         ./common/common.resource  
  
 *** Keywords ***
 Listar produtos e excluir o produto criado

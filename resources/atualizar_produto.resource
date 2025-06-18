@@ -1,6 +1,6 @@
 *** Settings ***
-Documentation    Testes de edição de produtos.
-Resource    ../resources/common/common.resource
+Documentation    Keywords de Edição de Produtos
+Resource         ./common/common.resource  
 
 *** Keywords ***
 Listar produtos e editar o produto criado

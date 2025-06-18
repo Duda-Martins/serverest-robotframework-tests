@@ -1,7 +1,8 @@
 *** Settings ***
-Resource    ../resources/common/common.resource
+Documentation    Testes de Validção de Alteração de Usuário Válido
+Resource         ../resources/common/common.resource
 
-Test Setup    Criar Sessao
+Test Setup       Criar Sessao
 Test Teardown    Take Screenshot
 Suite Setup      Silenciar InsecureRequestWarning
 
