@@ -14,6 +14,7 @@ Cenário: Cadastrar um produto valido
     Excluir usuário - API    ${user['email']}       #Maria
     Enviar formulário de inscrição    ${user}       #Thais
     Cadastrar um produto valido                     #Pedro
+    Excluir produto - API    ${nome_produto}        #Maria
 
 Cenário: Listagem de produtos validos
     [Tags]    LISTUSU
@@ -23,3 +24,4 @@ Cenário: Listagem de produtos validos
     Enviar formulário de inscrição    ${user}       #Thais
     Cadastrar um produto valido                     #Pedro
     Listagem de produtos validos                    #Pedro
+    Excluir produto - API    ${nome_produto}        #Maria

@@ -3,6 +3,7 @@ Documentation    Testes de exclusão de produtos.
 Resource    ../resources/common/common.resource
  
 Test Teardown     Take Screenshot
+Suite Setup      Silenciar InsecureRequestWarning
  
 *** Test Cases ***
  

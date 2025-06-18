@@ -2,7 +2,6 @@
 Documentation    Keywords do Endpoint Produtos
 Library    Browser
 Library    Collections
-Library    FakerLibrary
 
 *** Keywords ***
 Cadastrar um produto valido
@@ -15,12 +14,11 @@ Cadastrar um produto valido
     Should Be Equal            ${titulo}    Cadastro de Produtos
 
     # Preenche e cadastra
-    ${nome_produto}=      FakerLibrary.Name
-    Set Suite Variable    ${nome_produto}
+    Set Suite Variable    ${nome_produto}    TV do Pedro
 
     Fill Text    [data-testid="nome"]         ${nome_produto}
     Fill Text    [data-testid="preco"]        777
-    Fill Text    [data-testid="descricao"]    Descrição do Produto - PEDRO
+    Fill Text    [data-testid="descricao"]    Uma TV Muito Boa
     Fill Text    [data-testid="quantity"]     7
 
     Get Text     [data-testid="cadastarProdutos"]    ==    Cadastrar

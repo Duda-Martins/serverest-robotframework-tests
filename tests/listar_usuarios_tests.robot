@@ -3,10 +3,11 @@ Resource    ../resources/common/common.resource
 
 Test Setup    Criar Sessao
 Test Teardown    Take Screenshot
+Suite Setup      Silenciar InsecureRequestWarning
 
 *** Variables ***
 ${BASE_URL}              https://compassuolfront.serverest.dev
-${BROWSER}          Chrome
+${BROWSER}          chromium
 ${NOME_ATUAL}       TesteBre
 ${EMAIL_ADMIN}      qabre@admin.com
 ${SENHA_ADMIN}      admin123

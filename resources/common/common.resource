@@ -43,7 +43,7 @@ Logar
     O usuário deve estar logado   ${data}[usuario][nome]
 
 Criar Sessao
-    New Browser    browser=chromium    headless=False
+    New Browser    browser=${BROWSER}    headless=False
     New Page       ${BASE_URL}
     Create Session    alias=restful-serverest    url=${API_URL}
 

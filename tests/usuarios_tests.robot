@@ -4,6 +4,7 @@ Resource    ../resources/common/common.resource
 
 Test Setup       Criar Sessao
 Test Teardown    Take Screenshot
+Suite Setup      Silenciar InsecureRequestWarning
 
 *** Test Cases ***
 Cenario: Criar um novo usuário com administrador valido

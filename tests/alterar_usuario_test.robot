@@ -3,6 +3,7 @@ Resource    ../resources/common/common.resource
 
 Test Setup    Criar Sessao
 Test Teardown    Take Screenshot
+Suite Setup      Silenciar InsecureRequestWarning
 
 *** Test Cases ***
 Cenário de teste 03 - Validar o campo de alteração/edição de um usuário válido
