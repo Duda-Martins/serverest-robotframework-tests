@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    Keywords para testes  das pagina de login
-Library     Browser
 Resource    ./common/common.resource        
 
 *** Keywords ***
@@ -25,6 +24,8 @@ O usuário deve estar logado
 
    @{nome_inicial}    Split String    ${name}
    ${element}    Set Variable    css=h1  
+   
+   Sleep    5
 
    Sleep    5
 
