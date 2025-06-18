@@ -27,8 +27,6 @@ O usuário deve estar logado
    
    Sleep    5
 
-   Sleep    5
-
    Wait For Elements State    ${element}   
    ...    visible     5
 
