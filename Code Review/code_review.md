@@ -2,7 +2,7 @@
 - **Squad Revisora:** QA-ntastic Five
 - **Squad Revisada:** Codetectives
 - **Data:** 18/06/2025
-- **Aplicação Alvo:** [Automação de Testes Web com Robot Framework | ServeRest - Codetectives](hhttps://github.com/luismagriss/codetectives)
+- **Aplicação Alvo:** [Automação de Testes Web com Robot Framework | ServeRest - Codetectives](https://github.com/luismagriss/codetectives)
 
 ---
 
